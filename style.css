@@ -13,11 +13,13 @@
 
 /* Initialization */
 
+
 body {
 	max-width: 1270px;
 	border: 1px solid #ccc;
 	margin: 0 auto;
-	font-family: 'Avenir', Arial, sans-serif;
+
+    font-family: 'Avenir', Arial, sans-serif;
 	font-weight: 900;
 	font-size: 14px;
     box-sizing: border-box;
@@ -26,6 +28,7 @@ body {
     line-height: 1;
 
     background-color: aquamarine;
+
 }
 
 select, input {
@@ -50,6 +53,25 @@ input::-webkit-input-placeholder {
 input:-ms-input-placeholder {
     color: #aaa;
     padding-left: 8px;
+}
+
+
+h2 {
+    font-size: 24px;
+    padding: 0;
+    margin: 0 0 11px;
+    line-height: 1.3;
+}
+
+h4 {
+    padding: 0;
+    margin: 21px 0 5px;
+
+}
+
+p {
+    padding: 0;
+    margin: 0 0 5px;
 }
 
 
@@ -279,8 +301,8 @@ header {
 }
 
 .header-usp-item img {
-    height: 14px;
-    width: 14px;
+    height: 13px;
+    width: 13px;
     margin-right: 8px;
     vertical-align: bottom;
 
@@ -293,13 +315,16 @@ main {
     display: flex;
     width: 100%;
     background-color: #fff;
+    justify-content: space-between;
+
 }
 
 
 /* Navigatioon */
 
 .navigation-section {
-    flex-basis: 406px;
+    flex-basis: 404px;
+    box-sizing: border-box;
 
 }
 
@@ -312,6 +337,8 @@ main {
 
 .nav-items {
     list-style-type: none;
+    padding: 0;
+
 }
 
 .nav-item a {
@@ -333,13 +360,123 @@ main {
 
 
 /* Banners */
+
 .banners-block {
-   margin-top: 50px;
+    margin-top: 50px;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/* Genera; Banner Settings */
+.banner {
+    background-color: #f5f5f5;
+    padding: 65px 35px 30px 35px;
+    border-radius: 3px;
+    /*border: 1px solid #000;*/
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.banner-link {
+    display: inline-block;
+    height: 40px;
+    width: 78px;
+    background-color: #000;
+    border-radius: 3px;
+    padding: 13px 8px;
+    color: #fff;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+.banner-image {
+    float: right;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 36px;
+
+}
+
+
+/* First Banners */
+
+.first-banners {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    /*flex-basis: 786px;*/
 }
 
 
 
+/* Main Banner */
+.banner.main {
+    padding-top: 30px;
+    flex-basis: 526px;
+    margin-right: 7px;
+    box-sizing: border-box;
+}
 
+.banner.main h2 {
+    font-size: 32px;
+
+}
+
+
+
+/* Info Banner */
+.banner.info {
+    padding-top: 21px;
+    padding-right: 23px;
+    flex-basis: 253px;
+    box-sizing: border-box;
+}
+
+.banner-icon {
+    height: 13px;
+    width: 13px;
+    float: left;
+    margin-right: 8px;
+    margin-left: -21px;
+}
+
+
+
+.day {
+
+    display: block;
+    text-align: left;
+    float: left;
+}
+
+.hours {
+    display: block;
+    text-align: right;
+}
+
+
+
+/* Second Banners */
+
+.second-banners {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.second-banners .banner {
+    flex-basis: 390px;
+}
 
 
 
