@@ -55,7 +55,10 @@
                 </nav>
             </div>
             <div class="search-bar">
-                <input id="search" type="text" name="search-field" placeholder="Zoek product" maxlength="128" autocomplete="off">
+                <form class="search-form" action="https://www.domain.nl/catalogsearch/result/" method="get">
+                    <input id="search-field" type="text" name="search-field" placeholder="Zoek product" maxlength="128" autocomplete="off" autocorrect="off">
+                    <button type="submit" title="Zoek" class="action search"></button>
+                </form>
             </div>
             <div class="vat-wrapper">
                 <div class="vat-item">Excl. BTW</div>
@@ -111,15 +114,15 @@
 
 <main id="main-content">
 
-<div class="banners-block">
+<div class="top-banners-block">
 
-            <div class="banner main">
+            <div class="top-banner main">
                 <h4>Gehoorbescherming 20% korting</h4>
                 <a class="banner-link" href="#">Bestel nu</a>
                 <img class="banner-image" src="media/png/banner-image-01.png" alt="banner-image-01" />
             </div>
 
-            <div class="banner info">
+            <div class="top-banner info">
                 <div class="info-block">
                     <p>Heb je een vraag?</p>
                     <p>Wij staan voor je klaar!</p>
@@ -142,13 +145,13 @@
                 </div>
             </div>
 
-            <div class="banner">
+            <div class="top-banner">
                 <h4>Schuurmachines Vanaf € 150,-</h4>
                 <a class="banner-link" href="#">Bestel nu</a>
                 <img class="banner-image" src="media/png/banner-image-02.png" alt="banner-image-02" />
             </div>
 
-            <div class="banner">
+            <div class="top-banner">
                 <h4>Rookmelders Vanaf € 50,-</h4>
                 <a class="banner-link" href="#">Bestel nu</a>
                 <img class="banner-image" src="media/png/banner-image-03.png" alt="banner-image-03" />
@@ -163,8 +166,8 @@
                 <img src="#" alt="#" />
             </div>
             <div class="product-item-details">
-                <div class="product-item-name">Schuurmachine FERM
-Ak450970</div>
+                <div class="product-item-name">Schuurmachine FERM</div>
+                <div class="product-sku">Ak450970</div>
                 <div class="price-box">€ 150,-</div>
             </div>
         </div>
@@ -173,7 +176,8 @@ Ak450970</div>
                 <img src="#" alt="#" />
             </div>
             <div class="product-item-details">
-                <div class="product-item-name">Product name</div>
+                <div class="product-item-name">Rookmelder Special</div>
+                <div class="product-sku">Ak450970</div>
                 <div class="price-box">€ 150,-</div>
             </div>
         </div>
@@ -182,7 +186,8 @@ Ak450970</div>
                 <img src="#" alt="#" />
             </div>
             <div class="product-item-details">
-                <div class="product-item-name">Product name</div>
+                <div class="product-item-name">Schuurmachine FERM</div>
+                <div class="product-sku">Ak450970</div>
                 <div class="price-box">€ 150,-</div>
             </div>
         </div>
@@ -191,7 +196,8 @@ Ak450970</div>
                 <img src="#" alt="#" />
             </div>
             <div class="product-item-details">
-                <div class="product-item-name">Product name</div>
+                <div class="product-item-name">Rookmelder Special</div>
+                <div class="product-sku">Ak450970</div>
                 <div class="price-box">€ 150,-</div>
             </div>
         </div>
@@ -200,7 +206,8 @@ Ak450970</div>
                 <img src="#" alt="#" />
             </div>
             <div class="product-item-details">
-                <div class="product-item-name">Product name</div>
+                <div class="product-item-name">Schuurmachine FERM</div>
+                <div class="product-sku">Ak450970</div>
                 <div class="price-box">€ 150,-</div>
             </div>
         </div>
@@ -209,7 +216,8 @@ Ak450970</div>
                 <img src="#" alt="#" />
             </div>
             <div class="product-item-details">
-                <div class="product-item-name">Product name</div>
+                <div class="product-item-name">Rookmelder Special</div>
+                <div class="product-sku">Ak450970</div>
                 <div class="price-box">€ 150,-</div>
             </div>
         </div>
@@ -218,19 +226,81 @@ Ak450970</div>
                 <img src="#" alt="#" />
             </div>
             <div class="product-item-details">
-                <div class="product-item-name">Product name</div>
+                <div class="product-item-name">Schuurmachine FERM</div>
+                <div class="product-sku">Ak450970</div>
                 <div class="price-box">€ 150,-</div>
             </div>
         </div>
     </div>
+</div>
 
-
+<div class="bottom-banners-block">
+   <div class="bottom-banner">
+        <img class="bottom-banner-image" src="" alt="#" />
+        <h4 class="bottom-banner-title"></h4>
+        <span class="bottom-banner-subtitle"></span>
+   </div>
+   <div class="bottom-banner">
+        <img class="bottom-banner-image" src="" alt="#" />
+        <h4 class="bottom-banner-title"></h4>
+        <span class="bottom-banner-subtitle"></span>
+   </div>
 </div>
 
 
 </main>
 
 
+<footer>
+
+
+
+<div class="about-block">
+    <h4>Over bedrijf</h4>
+    <ul>
+        <li><a href="#">Assortiment</a></li>
+        <li><a href="#">Zakelijke klanten</a></li>
+        <li><a href="#">Nieuws</a></li>
+    </ul>
+</div>
+
+<div class="service-block">
+    <h4>Klantenservice</h4>
+    <ul>
+        <li><a href="#">Bestellen</a></li>
+        <li><a href="#">Betalen</a></li>
+        <li><a href="#">Retourneren</a></li>
+        <li><a href="#">Bezorgen</a></li>
+        <li><a href="#">Afhalen</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Nieuwsbrief</a></li>
+    </ul>
+</div>
+
+<div class="newsletter-subscription-block">
+    <form class="subscribe-form" novalidate="novalidate" action="" method="post">
+        <input name="newsletter-email" type="email" placeholder="E-mailadres" data-validate="{required:true, 'validate-email':true}">
+        <button class="subscribe-action" title="Aanmelden" type="submit"></button>
+    </form>
+ </div>
+
+<div class="footer-payment-delivery-icons">
+
+</div>
+
+
+
+
+
+
+
+</footer>
+
+
 
 </body>
 </html>
+
+
+
+
