@@ -27,8 +27,19 @@
 <body>
 
 
+
+<div style="background-color: #ffc100">
+
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+
+</div>
+
 <!-- Header -->
 <header>
+
     <div class="header-logo">
         <a href="#"><img src="media/png/header-logo.png" alt="header logo" title="header-logo" /></a>
     </div>
@@ -237,13 +248,13 @@
 <div class="bottom-banners-block">
    <div class="bottom-banner">
         <img class="bottom-banner-image" src="" alt="#" />
-        <h4 class="bottom-banner-title"></h4>
-        <span class="bottom-banner-subtitle"></span>
+        <h4 class="bottom-banner-title">Nachtbezorging</h4>
+        <span class="bottom-banner-subtitle">Vandaag besteld vannacht al in huis</span>
    </div>
    <div class="bottom-banner">
         <img class="bottom-banner-image" src="" alt="#" />
-        <h4 class="bottom-banner-title"></h4>
-        <span class="bottom-banner-subtitle"></span>
+        <h4 class="bottom-banner-title">Nachtbezorging</h4>
+        <span class="bottom-banner-subtitle">Vandaag besteld vannacht al in huis</span>
    </div>
 </div>
 
@@ -254,40 +265,65 @@
 <footer>
 
 
+<div class="footer-top-container">
 
-<div class="about-block">
-    <h4>Over bedrijf</h4>
-    <ul>
-        <li><a href="#">Assortiment</a></li>
-        <li><a href="#">Zakelijke klanten</a></li>
-        <li><a href="#">Nieuws</a></li>
-    </ul>
+    <div class="about-block">
+        <h4>Over bedrijf</h4>
+        <ul>
+            <li><a href="#">Assortiment</a></li>
+            <li><a href="#">Zakelijke klanten</a></li>
+            <li><a href="#">Nieuws</a></li>
+        </ul>
+    </div>
+
+    <div class="service-block">
+        <h4>Klantenservice</h4>
+        <ul>
+            <li><a href="#">Bestellen</a></li>
+            <li><a href="#">Betalen</a></li>
+            <li><a href="#">Retourneren</a></li>
+            <li><a href="#">Bezorgen</a></li>
+            <li><a href="#">Afhalen</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Nieuwsbrief</a></li>
+        </ul>
+    </div>
+
+    <div class="newsletter-subscription-block">
+       <h4>Nieuwsbrief</h4>
+        <form class="subscribe-form" novalidate="novalidate" action="" method="post">
+            <input name="newsletter-email" type="email" placeholder="E-mailadres" data-validate="{required:true, 'validate-email':true}">
+            <button class="subscribe-action" title="Aanmelden" type="submit"></button>
+        </form>
+     </div>
+
+    <div class="footer-icons">
+        <ul>
+            <li><img src="#" alt="#" title="" /></li>
+            <li><img src="#" alt="#" title="" /></li>
+            <li><img src="#" alt="#" title="" /></li>
+            <li><img src="#" alt="#" title="" /></li>
+        </ul>
+    </div>
+
 </div>
 
-<div class="service-block">
-    <h4>Klantenservice</h4>
-    <ul>
-        <li><a href="#">Bestellen</a></li>
-        <li><a href="#">Betalen</a></li>
-        <li><a href="#">Retourneren</a></li>
-        <li><a href="#">Bezorgen</a></li>
-        <li><a href="#">Afhalen</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Nieuwsbrief</a></li>
-    </ul>
-</div>
-
-<div class="newsletter-subscription-block">
-    <form class="subscribe-form" novalidate="novalidate" action="" method="post">
-        <input name="newsletter-email" type="email" placeholder="E-mailadres" data-validate="{required:true, 'validate-email':true}">
-        <button class="subscribe-action" title="Aanmelden" type="submit"></button>
-    </form>
- </div>
-
-<div class="footer-payment-delivery-icons">
+<div class="footer-bottom-container">
+    <div class="footer-bottom-menu">
+        <a href="#" title="">Algemene voorwarden</a>
+        <a href="#" title="">Privacy</a>
+        <a href="#" title="">Cookies</a>
+        <a href="#" title="">Disclaimer</a>
+    </div>
+    <div class="footer-rating">
+        <div class="footer-rating-stars"></div>
+        <div class="footer-rating-reviews"><span class="reviews-number">1.011</span>beoordelingen</div>
+      <!--
+       <iframe frameborder="0" scrolling="no" title="Customer reviews online service" loading="auto" src="" style="position: relative; height: 28px; width: 100%; border-style: none; display: block; overflow: hidden;"></iframe>
+       -->
+    </div>
 
 </div>
-
 
 
 
@@ -295,6 +331,8 @@
 
 
 </footer>
+
+
 
 
 
