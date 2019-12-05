@@ -13,6 +13,9 @@
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato:900&display=swap" rel="stylesheet">
 
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" type="text/css" href="fonts/FontAwesome-4.7.0/css/font-awesome.min.css">
+
     <!-- JQuery-->
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 
@@ -28,14 +31,10 @@
 
 
 
-<div style="background-color: #ffc100">
 
-    <label class="switch">
-      <input type="checkbox">
-      <span class="slider"></span>
-    </label>
 
-</div>
+
+
 
 <!-- Header -->
 <header>
@@ -47,7 +46,7 @@
         <div class="header-elements">
             <div class="navigation-wrapper-desktop">
 			    <select class="navigation-items">
-				    <option value="producten.html">Producten</option>
+	        	    <option value="producten.html">Producten</option>
 					<option value="nieuwsbrief.html">Nieuwsbrief</option>
 				    <option value="sales.html">Sales</option>
 				    <option value="service.html">Service</option>
@@ -71,9 +70,11 @@
                     <button type="submit" title="Zoek" class="action search"></button>
                 </form>
             </div>
-            <div class="vat-wrapper">
-                <div class="vat-item">Excl. BTW</div>
-                <div class="vat-item price"></div>
+            <div class="btw-wrapper">
+                <label class="btw-switch">
+                  <input class="toggle-input" type="checkbox">
+                  <span class="toggle"></span>
+                </label>
             </div>
             <div class="loggin">
                 <a class="loggin-link" href="#">Inloggen</a>
@@ -332,7 +333,18 @@
 
 </footer>
 
-
+    <div id="FontAwesome">
+       <ul>
+           <li><i class="fa fa-thumbs-up" aria-hidden="true">Unicode: f164</i></li>
+           <li><i class="fa fa-truck" aria-hidden="true">Unicode: f0d1</i></li>
+           <li><i class="fa fa-phone" aria-hidden="true">Unicode: f095</i></li>
+           <li><i class="fa fa-clock-o" aria-hidden="true">Unicode: f017</i></li>
+           <li><i class="fa fa-chevron-down" aria-hidden="true">Unicode: f078</i></li>
+           <li><i class="fa fa-user" aria-hidden="true">Unicode: f007</i></li>
+           <li><i class="fa fa-search" aria-hidden="true">Unicode: f002</i></li>
+           <li><i class="fa fa-shopping-cart" aria-hidden="true">Unicode: f07a</i></li>
+       </ul>
+    </div>
 
 
 
