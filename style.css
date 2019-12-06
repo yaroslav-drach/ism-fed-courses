@@ -18,7 +18,8 @@
         url('fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.woff2') format('woff2'),
         url('fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.woff') format('woff'),
         url('fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.ttf') format('truetype'),
-        url('fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.svg#FontAwesome') format('svg');;
+        url('fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+    ;
     font-weight: 400;
     font-style: normal;
 }
@@ -37,7 +38,9 @@
     -moz-box-sizing: border-box;
 }
 
-*::selection {background-color: #ffc100;}
+*::selection {
+    background-color: #ffc100;
+}
 
 /* Remove padding and standard styling for all  ul and il which have attribute "class" */
 ul[class],
@@ -65,7 +68,7 @@ blockquote,
 dl,
 dd,
 hr {
-  margin: 0;
+    margin: 0;
 }
 
 /* We inherit fonts for inputs and buttons */
@@ -73,7 +76,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
 
 
@@ -81,12 +84,12 @@ select {
 /* Global CSS */
 
 body {
-	max-width: 1270px;
-	border: 1px solid #ccc;
-	margin: 0 auto;
+    max-width: 1270px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
     font-family: 'Avenir', Arial, sans-serif;
-	font-weight: 900;
-	font-size: 14px;
+    font-weight: 900;
+    font-size: 14px;
     min-height: 100vh;
 
     background-color: aquamarine;
@@ -110,7 +113,7 @@ input::placeholder {
 /* Edge */
 input::-webkit-input-placeholder {
     color: #aaa;
-   /* padding-left: 8px;*/
+    /* padding-left: 8px;*/
 }
 
 /* Internet Explorer 10-11 */
@@ -123,15 +126,16 @@ input:-ms-input-placeholder {
 select {
     height: 40px;
     width: 100%;
-	padding: 8px;
-	color: #fff;
-	border-radius: 3px;
-	background-color: #000;
-	background-repeat: no-repeat;
-	background-image: url(media/svg/chevron-down-solid.svg);
-	background-position: right 8px center;
+    padding: 8px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-image: url(media/svg/chevron-down-solid-white.svg);
+    background-position: right 8px center;
     background-size: 8px;
-	-webkit-appearance: none; /* Remove default arrow */
+    -webkit-appearance: none;
+    /* Remove default arrow */
     -moz-appearance: none;
     appearance: none;
 
@@ -182,8 +186,8 @@ header {
 /* Header logo */
 
 .header-logo {
-	width: 20%;
-	text-align: center;
+    width: 20%;
+    text-align: center;
 }
 
 
@@ -202,15 +206,17 @@ header {
 
 }
 
-.header-elements > div {margin-right: 8px;}
+.header-elements > div {
+    margin-right: 8px;
+}
 
 
 /* Products selection */
 
 .navigation-wrapper {
     display: flex;
-   	flex-basis: 148px;
-	height: 40px;
+    flex-basis: 148px;
+    height: 40px;
 
 }
 
@@ -232,18 +238,18 @@ header {
 
 
 .action.search {
-display: inline-block;
-border: none;
-padding: 0;
-margin: 0;
-background-color: transparent;
-position: relative;
-z-index: 1;
-position: absolute;
-top: 11px;
-right: 10px;
-height: 13px;
-width: 13px;
+    display: inline-block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    height: 13px;
+    width: 13px;
 
 
 }
@@ -259,35 +265,75 @@ width: 13px;
 
 
 
-/* VAT */
+/* BTW */
 
-.vat-wrapper {
-    display: block;
-    height: 40px;
-    width: 80px;
-    border-radius: 3px;
-    background-color: #fff;
-    font-size: 12px;
+
+/* The container for toggle */
+.btw-switch {
     position: relative;
-    overflow: hidden;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+
+
 }
 
-.vat-item {
-    display: table-cell;
-    vertical-align: middle;
+/* Hide default HTML checkbox */
+.btw-switch .toggle-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The toggle */
+.toggle {
+    font-size: 12px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    -webkit-transition: 0.4s linear;
+    transition: 0.4s linear;
+    border-radius: 3px;
+
+
+}
+
+.toggle::before {
+    position: absolute;
+    content: "Excl. BTW";
+    padding: 6px 7px;
     height: 40px;
     width: 40px;
-    background: #fff;
+    left: 0px;
+    bottom: 0px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 2px 0px 0px 2px;
     overflow: hidden;
-    text-align: center;
-    padding: 3px;
+}
 
-
-  }
-
-.vat-item.price {
+.toggle-input:checked + .toggle {
     background-color: #000;
 }
+
+.toggle-input:focus + .toggle {
+    box-shadow: 0 0 1px #fff;
+}
+
+.toggle-input:checked + .toggle::before {
+    content: "Incl. BTW";
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+    border-radius: 0px 2px 3px 2px;
+}
+
+
 
 
 /* Loggin */
@@ -300,7 +346,7 @@ width: 13px;
     background-color: #fff;
 
     overflow: hidden;
-    }
+}
 
 .loggin-link {
     display: block;
@@ -313,14 +359,16 @@ width: 13px;
     color: #000;
     transition: color 0.2s linear;
     background-color: #fff;
-	background-repeat: no-repeat;
-	background-image: url(media/svg/user-icon.svg);
-	background-position: left 8px center;
+    background-repeat: no-repeat;
+    background-image: url(media/svg/user-icon.svg);
+    background-position: left 8px center;
     background-size: 10px;
 
 }
 
-.loggin-link:visited {color: #000;}
+.loggin-link:visited {
+    color: #000;
+}
 
 .loggin-link:hover {
     color: #ffc100;
@@ -339,32 +387,37 @@ width: 13px;
 
 }
 
-.shopping-cart-inner {
-
-
-
-}
 
 .shopping-cart-link {
     display: block;
-    width: 44px;
+    width: 100%;
+    height: 100%;
     padding: 5px 20px;
-    height: 30px;
     line-height: 1.4;
     text-align: right;
     color: #fff;
     text-decoration: none;
     background-color: #000;
-	background-repeat: no-repeat;
-	background-image: url(media/svg/shopping-cart.svg), url(media/svg/arrow-down.svg);
-	background-position: left 25px center, right 20px bottom 11px;
+    background-repeat: no-repeat;
+    background-image: url(media/svg/shopping-cart-white.svg), url(media/svg/chevron-down-solid-white.svg);
+    background-position: left 25px center, right 20px bottom 10px;
     background-size: 24px, 8px;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear
 
 }
 
-.shopping-cart-link:visited {color: #fff;}
+.shopping-cart-link:hover {
+    color: #000;
+    background-color: #fff;
+    background-image: url(media/svg/shopping-cart-black.svg), url(media/svg/chevron-down-solid-black.svg);
+}
 
-.shopping-cart-link .qty {font-family: 'Lato', Arial, sans-serif;}
+
+
+.shopping-cart-link .qty {
+    font-family: 'Lato', Arial, sans-serif;
+}
 
 
 /* USP block*/
@@ -433,7 +486,7 @@ main {
 }
 
 .nav-item a:visited {
-   color: #000;
+    color: #000;
 }
 
 
@@ -559,72 +612,23 @@ main {
 
 
 
-/* The container for toggle */
-.btw-switch {
-  position: relative;
-  display: inline-block;
-  width: 80px;
-  height: 40px;
 
 
-}
-
-/* Hide default HTML checkbox */
-.btw-switch .toggle-input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The toggle */
-.toggle {
-font-size: 12px;
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000;
-  -webkit-transition: .4s;
-  transition: .4s;
-    border-radius: 3px;
 
 
-}
+/* Footer */
 
-.toggle::before {
-    position: absolute;
-    content: "Excl. BTW";
-    padding: 6px 7px;
-    height: 40px;
-    width: 40px;
-    left: 0px;
-    bottom: 0px;
-    background-color: #fff;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 2px 0px 0px 2px;
-    overflow: hidden;
-}
-
-.toggle-input:checked + .toggle {
-  background-color: #000;
-}
-
-.toggle-input:focus + .toggle {
- box-shadow: 0 0 1px #fff;
-}
-
-.toggle-input:checked + .toggle::before {
-    content: "Incl. BTW";
-  -webkit-transform: translateX(40px);
-  -ms-transform: translateX(40px);
-  transform: translateX(40px);
-   border-radius: 0px 2px 3px 2px;
+.footer-rating-stars {
+    display: inline-block;
 }
 
 
+.fa.fa-star {
+    color: #ffc100;
+}
 
 
+.footer-rating-reviews {
+    display: inline-block;
+}
 

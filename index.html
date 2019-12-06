@@ -1,11 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>ISM FED Courses</title>
 
-	<!-- Main Styles-->
-	<link rel="stylesheet" type="text/css" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>ISM FED Courses</title>
+
+    <!-- Main Styles-->
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- Main JS-->
     <script type="text/javascript" src="js/script.js"></script>
@@ -20,6 +21,8 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato:900&display=swap" rel="stylesheet">
@@ -38,327 +41,327 @@
     <script type="text/javascript" src="js/script.js"></script>
 
 </head>
+
 <body>
 
 
 
 
-<!-- Header -->
+    <!-- Header -->
 
-<header>
+    <header>
 
-    <div class="header-logo">
-        <a href="#"><img src="media/png/header-logo.png" alt="header logo" title="header-logo" /></a>
-    </div>
-    <div class=header-inner>
-        <div class="header-elements">
-            <div class="navigation-wrapper-desktop">
-			    <select class="navigation-items">
-	        	    <option value="producten.html">Producten</option>
-					<option value="nieuwsbrief.html">Nieuwsbrief</option>
-				    <option value="sales.html">Sales</option>
-				    <option value="service.html">Service</option>
-					<option value="stores.html">Stores</option>
-                </select>
-            </div>
-            <div class="navigation-wrapper-mobile" style="display: none;">
-                <nav>
-                    <ul>
-                        <li><a href="#">Producten</a></li>
-                        <li><a href="#">Nieuwsbrief</a></li>
-                        <li><a href="#">Sales</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Stores</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="search-bar">
-                <form class="search-form" action="https://www.domain.nl/catalogsearch/result/" method="get">
-                    <input id="search-field" type="text" name="search-field" placeholder="Zoek product" maxlength="128" autocomplete="off" autocorrect="off">
-                    <button type="submit" title="Zoek" class="action search"></button>
-                </form>
-            </div>
-            <div class="btw-wrapper">
-                <label class="btw-switch">
-                  <input class="toggle-input" type="checkbox">
-                  <span class="toggle"></span>
-                </label>
-            </div>
-            <div class="loggin">
-                <a class="loggin-link" href="#">Inloggen</a>
-            </div>
-            <div class="shopping-cart">
-               <div class="shopping-cart-inner">
+        <div class="header-logo">
+            <a href="#"><img src="media/png/header-logo.png" alt="header logo" title="header-logo" /></a>
+        </div>
+        <div class=header-inner>
+            <div class="header-elements">
+                <div class="navigation-wrapper-desktop">
+                    <select class="navigation-items">
+                        <option value="producten.html">Producten</option>
+                        <option value="nieuwsbrief.html">Nieuwsbrief</option>
+                        <option value="sales.html">Sales</option>
+                        <option value="service.html">Service</option>
+                        <option value="stores.html">Stores</option>
+                    </select>
+                </div>
+                <div class="navigation-wrapper-mobile" style="display: none;">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Producten</a></li>
+                            <li><a href="#">Nieuwsbrief</a></li>
+                            <li><a href="#">Sales</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Stores</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="search-bar">
+                    <form class="search-form" action="https://www.domain.nl/catalogsearch/result/" method="get">
+                        <input id="search-field" type="text" name="search-field" placeholder="Zoek product" maxlength="128" autocomplete="off" autocorrect="off">
+                        <button type="submit" title="Zoek" class="action search"></button>
+                    </form>
+                </div>
+                <div class="btw-wrapper">
+                    <label class="btw-switch">
+                        <input class="toggle-input" type="checkbox">
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+                <div class="loggin">
+                    <a class="loggin-link" href="#">Inloggen</a>
+                </div>
+                <div class="shopping-cart">
                     <a class="shopping-cart-link" href="#"><span class="qty">2</span></a>
-               </div>
+                </div>
+            </div>
+            <div class="header-usp-items">
+                <ul class="header-usp-items-list">
+                    <li class="header-usp-item"><img src="media/svg/usp-hand-up.svg" alt="usp-hand-up" />Uitstekende klantenservice</li>
+                    <li class="header-usp-item "><img src="media/svg/usp-truck.svg" alt="usp-truck" />Gratis levering of afhalen in onze shops</li>
+                    <li class="header-usp-item"><img src="media/svg/usp-phone.svg" alt="usp-phone" />Gratis levering of afhalen in onze shops</li>
+                </ul>
             </div>
         </div>
-        <div class="header-usp-items">
-            <ul class="header-usp-items-list">
-                <li class="header-usp-item"><img src="media/svg/usp-hand-up.svg" alt="usp-hand-up" />Uitstekende klantenservice</li>
-                <li class="header-usp-item "><img src="media/svg/usp-truck.svg" alt="usp-truck" />Gratis levering of afhalen in onze shops</li>
-                <li class="header-usp-item"><img src="media/svg/usp-phone.svg" alt="usp-phone" />Gratis levering of afhalen in onze shops</li>
+    </header>
+
+
+    <!-- Links block -->
+
+    <div class="links-block">
+        <aside class="links-sidebar">
+            <ul class="link-items">
+                <li class="link-item"><a href="#">Behuizingen</a></li>
+                <li class="link-item"><a href="#">Bevestigingsmateriaal</a></li>
+                <li class="link-item"><a href="#">Draad en kabel</a></li>
+                <li class="link-item"><a href="#">Domotica</a></li>
+                <li class="link-item"><a href="#">Schakelmateriaal</a></li>
+                <li class="link-item"><a href="#">Rook- en hittemelders</a></li>
+                <li class="link-item"><a href="#">Verdeelsystemen</a></li>
+                <li class="link-item"><a href="#">Lichtbronnen</a></li>
+                <li class="link-item"><a href="#">LED-lichtbronnen</a></li>
+                <li class="link-item"><a href="#">Installatiemateriaal</a></li>
+                <li class="link-item"><a href="#">Kabeldraagsystemen</a></li>
+                <li class="link-item"><a href="#">Armaturen</a></li>
+                <li class="link-item"><a href="#">Data en multimedia</a></li>
+                <li class="link-item"><a href="#">Ruimte-oplossingen</a></li>
+                <li class="link-item"><a href="#">Lichtregeling</a></li>
             </ul>
-        </div>
+        </aside>
     </div>
-</header>
-
-
-
-<div class="links-block">
-	<aside class="links-sidebar">
-		<ul class="link-items">
-			<li class="link-item"><a href="#">Behuizingen</a></li>
-			<li class="link-item"><a href="#">Bevestigingsmateriaal</a></li>
-			<li class="link-item"><a href="#">Draad en kabel</a></li>
-			<li class="link-item"><a href="#">Domotica</a></li>
-			<li class="link-item"><a href="#">Schakelmateriaal</a></li>
-			<li class="link-item"><a href="#">Rook- en hittemelders</a></li>
-			<li class="link-item"><a href="#">Verdeelsystemen</a></li>
-			<li class="link-item"><a href="#">Lichtbronnen</a></li>
-			<li class="link-item"><a href="#">LED-lichtbronnen</a></li>
-			<li class="link-item"><a href="#">Installatiemateriaal</a></li>
-			<li class="link-item"><a href="#">Kabeldraagsystemen</a></li>
-			<li class="link-item"><a href="#">Armaturen</a></li>
-			<li class="link-item"><a href="#">Data en multimedia</a></li>
-			<li class="link-item"><a href="#">Ruimte-oplossingen</a></li>
-			<li class="link-item"><a href="#">Lichtregeling</a></li>
-		</ul>
-	</aside>
-</div>
 
 
 
 
-<!-- Main content -->
+    <!-- Main content -->
 
-<main id="main-content">
+    <main id="main-content">
 
-<div class="top-banners-block">
+        <div class="top-banners-block">
 
             <div class="top-banner main">
-                <h4>Gehoorbescherming 20% korting</h4>
-                <a class="banner-link" href="#">Bestel nu</a>
-                <img class="banner-image" src="media/png/banner-image-01.png" alt="banner-image-01" />
+                <div class="banner-content">
+                    <h4>Gehoorbescherming 20% korting</h4>
+                    <a class="banner-link" href="#">Bestel nu</a>
+                </div>
+                <div class="banner-image">
+                    <img class="banner-image" src="media/png/banner-image-01.png" alt="banner-image-01" />
+                </div>
             </div>
 
             <div class="top-banner info">
-                <div class="info-block">
-                    <p>Heb je een vraag?</p>
-                    <p>Wij staan voor je klaar!</p>
-                </div>
-                <div class="info-block">
-                    <img class="banner-icon" src="media/svg/usp-clock.svg"/>
-                    <h4>Openingstijden:</h4>
-                    <div class="info-working-hours-line">
-                        <p><span class="day">Ma-Vr</span><span class="hours">08.00 uur - 18.00 uur</span></p>
-                        <p><span class="day">Za</span><span class="hours">08.00 uur - 16.00 uur</span></p>
+                <div class="banner-content">
+                    <div class="info-block">
+                        <p>Heb je een vraag?</p>
+                        <p>Wij staan voor je klaar!</p>
+                    </div>
+                    <div class="info-block">
+                        <img class="banner-icon" src="media/svg/usp-clock.svg" />
+                        <h4>Openingstijden:</h4>
+                        <div class="info-working-hours-line">
+                            <p><span class="day">Ma-Vr</span><span class="hours">08.00 uur - 18.00 uur</span></p>
+                            <p><span class="day">Za</span><span class="hours">08.00 uur - 16.00 uur</span></p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <img class="banner-icon" src="media/svg/usp-phone.svg" />
+                        <h4>Telefonisch bereikbaar:</h4>
+                        <div class="info-working-hours-line">
+                            <p><span class="day">Ma-Vr</span><span class="hours">08.00 uur - 18.00 uur</span></p>
+                            <p><span class="day">Za</span><span class="hours">08.00 uur - 16.00 uur</span></p>
+                        </div>
                     </div>
                 </div>
-                <div class="info-block">
-                    <img class="banner-icon" src="media/svg/usp-phone.svg"/>
-                    <h4>Telefonisch bereikbaar:</h4>
-                    <div class="info-working-hours-line">
-                        <p><span class="day">Ma-Vr</span><span class="hours">08.00 uur - 18.00 uur</span></p>
-                        <p><span class="day">Za</span><span class="hours">08.00 uur - 16.00 uur</span></p>
-                    </div>
+
+            </div>
+
+            <div class="top-banner">
+                <div class="banner-content">
+                    <h4>Schuurmachines Vanaf € 150,-</h4>
+                    <a class="banner-link" href="#">Bestel nu</a>
+                </div>
+                <div class="banner-image">
+                    <img class="banner-image" src="media/png/banner-image-02.png" alt="banner-image-02" />
                 </div>
             </div>
 
             <div class="top-banner">
-                <h4>Schuurmachines Vanaf € 150,-</h4>
-                <a class="banner-link" href="#">Bestel nu</a>
-                <img class="banner-image" src="media/png/banner-image-02.png" alt="banner-image-02" />
-            </div>
-
-            <div class="top-banner">
-                <h4>Rookmelders Vanaf € 50,-</h4>
-                <a class="banner-link" href="#">Bestel nu</a>
-                <img class="banner-image" src="media/png/banner-image-03.png" alt="banner-image-03" />
-            </div>
- </div>
-
-<div class="product-slider">
-    <h4>Bestsellers</h4>
-    <div class="owl-carousel owl-theme">
-        <div class="product-tile">
-            <div class="product-photo">
-                <img src="#" alt="#" />
-            </div>
-            <div class="product-item-details">
-                <div class="product-item-name">Schuurmachine FERM</div>
-                <div class="product-sku">Ak450970</div>
-                <div class="price-box">€ 150,-</div>
+                <div class="banner-content">
+                    <h4>Rookmelders Vanaf € 50,-</h4>
+                    <a class="banner-link" href="#">Bestel nu</a>
+                </div>
+                <div class="banner-image">
+                    <img class="banner-image" src="media/png/banner-image-03.png" alt="banner-image-03" />
+                </div>
             </div>
         </div>
-        <div class="product-tile">
-            <div class="product-photo">
-                <img src="#" alt="#" />
-            </div>
-            <div class="product-item-details">
-                <div class="product-item-name">Rookmelder Special</div>
-                <div class="product-sku">Ak450970</div>
-                <div class="price-box">€ 150,-</div>
+
+        <div class="product-slider">
+            <h4>Bestsellers</h4>
+            <div class="owl-carousel owl-theme">
+                <div class="product-tile">
+                    <div class="product-photo">
+                        <img src="#" alt="#" />
+                    </div>
+                    <div class="product-item-details">
+                        <div class="product-item-name">Schuurmachine FERM</div>
+                        <div class="product-sku">Ak450970</div>
+                        <div class="price-box">€ 150,-</div>
+                    </div>
+                </div>
+                <div class="product-tile">
+                    <div class="product-photo">
+                        <img src="#" alt="#" />
+                    </div>
+                    <div class="product-item-details">
+                        <div class="product-item-name">Rookmelder Special</div>
+                        <div class="product-sku">Ak450970</div>
+                        <div class="price-box">€ 150,-</div>
+                    </div>
+                </div>
+                <div class="product-tile">
+                    <div class="product-photo">
+                        <img src="#" alt="#" />
+                    </div>
+                    <div class="product-item-details">
+                        <div class="product-item-name">Schuurmachine FERM</div>
+                        <div class="product-sku">Ak450970</div>
+                        <div class="price-box">€ 150,-</div>
+                    </div>
+                </div>
+                <div class="product-tile">
+                    <div class="product-photo">
+                        <img src="#" alt="#" />
+                    </div>
+                    <div class="product-item-details">
+                        <div class="product-item-name">Rookmelder Special</div>
+                        <div class="product-sku">Ak450970</div>
+                        <div class="price-box">€ 150,-</div>
+                    </div>
+                </div>
+                <div class="product-tile">
+                    <div class="product-photo">
+                        <img src="#" alt="#" />
+                    </div>
+                    <div class="product-item-details">
+                        <div class="product-item-name">Schuurmachine FERM</div>
+                        <div class="product-sku">Ak450970</div>
+                        <div class="price-box">€ 150,-</div>
+                    </div>
+                </div>
+                <div class="product-tile">
+                    <div class="product-photo">
+                        <img src="#" alt="#" />
+                    </div>
+                    <div class="product-item-details">
+                        <div class="product-item-name">Rookmelder Special</div>
+                        <div class="product-sku">Ak450970</div>
+                        <div class="price-box">€ 150,-</div>
+                    </div>
+                </div>
+                <div class="product-tile">
+                    <div class="product-photo">
+                        <img src="#" alt="#" />
+                    </div>
+                    <div class="product-item-details">
+                        <div class="product-item-name">Schuurmachine FERM</div>
+                        <div class="product-sku">Ak450970</div>
+                        <div class="price-box">€ 150,-</div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="product-tile">
-            <div class="product-photo">
-                <img src="#" alt="#" />
+
+        <div class="bottom-banners-block">
+            <div class="bottom-banner">
+                <img class="bottom-banner-image" src="" alt="#" />
+                <div class="banner-title">
+                    <h4 class="bottom-banner-title">Nachtbezorging</h4>
+                    <span class="bottom-banner-subtitle">Vandaag besteld vannacht al in huis</span>
+                </div>
             </div>
-            <div class="product-item-details">
-                <div class="product-item-name">Schuurmachine FERM</div>
-                <div class="product-sku">Ak450970</div>
-                <div class="price-box">€ 150,-</div>
-            </div>
-        </div>
-        <div class="product-tile">
-            <div class="product-photo">
-                <img src="#" alt="#" />
-            </div>
-            <div class="product-item-details">
-                <div class="product-item-name">Rookmelder Special</div>
-                <div class="product-sku">Ak450970</div>
-                <div class="price-box">€ 150,-</div>
+            <div class="bottom-banner">
+                <img class="bottom-banner-image" src="" alt="#" />
+                <div class="banner-title">
+                    <h4 class="bottom-banner-title">Nachtbezorging</h4>
+                    <span class="bottom-banner-subtitle">Vandaag besteld vannacht al in huis</span>
+                </div>
             </div>
         </div>
-        <div class="product-tile">
-            <div class="product-photo">
-                <img src="#" alt="#" />
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-top-container">
+
+            <div class="about-block">
+                <h4>Over bedrijf</h4>
+                <ul>
+                    <li><a href="#">Assortiment</a></li>
+                    <li><a href="#">Zakelijke klanten</a></li>
+                    <li><a href="#">Nieuws</a></li>
+                </ul>
             </div>
-            <div class="product-item-details">
-                <div class="product-item-name">Schuurmachine FERM</div>
-                <div class="product-sku">Ak450970</div>
-                <div class="price-box">€ 150,-</div>
+
+            <div class="service-block">
+                <h4>Klantenservice</h4>
+                <ul>
+                    <li><a href="#">Bestellen</a></li>
+                    <li><a href="#">Betalen</a></li>
+                    <li><a href="#">Retourneren</a></li>
+                    <li><a href="#">Bezorgen</a></li>
+                    <li><a href="#">Afhalen</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Nieuwsbrief</a></li>
+                </ul>
             </div>
+
+            <div class="newsletter-subscription-block">
+                <h4>Nieuwsbrief</h4>
+                <form class="subscribe-form" novalidate="novalidate" action="" method="post">
+                    <input name="newsletter-email" type="email" placeholder="E-mailadres">
+                    <button class="newsletter-subscribe-action" title="Aanmelden" type="submit"></button>
+                </form>
+            </div>
+
+            <div class="footer-icons">
+                <ul>
+                    <li><img src="#" alt="#" title="" /></li>
+                    <li><img src="#" alt="#" title="" /></li>
+                    <li><img src="#" alt="#" title="" /></li>
+                    <li><img src="#" alt="#" title="" /></li>
+                </ul>
+            </div>
+
         </div>
-        <div class="product-tile">
-            <div class="product-photo">
-                <img src="#" alt="#" />
+
+        <div class="footer-bottom-container">
+            <div class="footer-bottom-menu">
+                <a href="#" title="">Algemene voorwarden</a>
+                <a href="#" title="">Privacy</a>
+                <a href="#" title="">Cookies</a>
+                <a href="#" title="">Disclaimer</a>
             </div>
-            <div class="product-item-details">
-                <div class="product-item-name">Rookmelder Special</div>
-                <div class="product-sku">Ak450970</div>
-                <div class="price-box">€ 150,-</div>
+            <div class="footer-rating">
+                <div class="footer-rating-stars">
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="footer-rating-reviews"><span class="reviews-number">1.011</span> beoordelingen</div>
+                <!-- Instead of images "footer-rating-stars" and "footer-rating-reviews" we should use reviews online service
+                   <iframe frameborder="0" scrolling="no" title="Customer reviews online service" loading="auto" src="" style="position: relative; height: 14px; width: 100%; border-style: none; display: block; overflow: hidden;"></iframe>
+                -->
             </div>
+
         </div>
-        <div class="product-tile">
-            <div class="product-photo">
-                <img src="#" alt="#" />
-            </div>
-            <div class="product-item-details">
-                <div class="product-item-name">Schuurmachine FERM</div>
-                <div class="product-sku">Ak450970</div>
-                <div class="price-box">€ 150,-</div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="bottom-banners-block">
-   <div class="bottom-banner">
-        <img class="bottom-banner-image" src="" alt="#" />
-        <h4 class="bottom-banner-title">Nachtbezorging</h4>
-        <span class="bottom-banner-subtitle">Vandaag besteld vannacht al in huis</span>
-   </div>
-   <div class="bottom-banner">
-        <img class="bottom-banner-image" src="" alt="#" />
-        <h4 class="bottom-banner-title">Nachtbezorging</h4>
-        <span class="bottom-banner-subtitle">Vandaag besteld vannacht al in huis</span>
-   </div>
-</div>
-
-
-</main>
-
-
-<footer>
-
-
-<div class="footer-top-container">
-
-    <div class="about-block">
-        <h4>Over bedrijf</h4>
-        <ul>
-            <li><a href="#">Assortiment</a></li>
-            <li><a href="#">Zakelijke klanten</a></li>
-            <li><a href="#">Nieuws</a></li>
-        </ul>
-    </div>
-
-    <div class="service-block">
-        <h4>Klantenservice</h4>
-        <ul>
-            <li><a href="#">Bestellen</a></li>
-            <li><a href="#">Betalen</a></li>
-            <li><a href="#">Retourneren</a></li>
-            <li><a href="#">Bezorgen</a></li>
-            <li><a href="#">Afhalen</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Nieuwsbrief</a></li>
-        </ul>
-    </div>
-
-    <div class="newsletter-subscription-block">
-       <h4>Nieuwsbrief</h4>
-        <form class="subscribe-form" novalidate="novalidate" action="" method="post">
-            <input name="newsletter-email" type="email" placeholder="E-mailadres" data-validate="{required:true, 'validate-email':true}">
-            <button class="subscribe-action" title="Aanmelden" type="submit"></button>
-        </form>
-     </div>
-
-    <div class="footer-icons">
-        <ul>
-            <li><img src="#" alt="#" title="" /></li>
-            <li><img src="#" alt="#" title="" /></li>
-            <li><img src="#" alt="#" title="" /></li>
-            <li><img src="#" alt="#" title="" /></li>
-        </ul>
-    </div>
-
-</div>
-
-<div class="footer-bottom-container">
-    <div class="footer-bottom-menu">
-        <a href="#" title="">Algemene voorwarden</a>
-        <a href="#" title="">Privacy</a>
-        <a href="#" title="">Cookies</a>
-        <a href="#" title="">Disclaimer</a>
-    </div>
-    <div class="footer-rating">
-        <div class="footer-rating-stars"></div>
-        <div class="footer-rating-reviews"><span class="reviews-number">1.011</span>beoordelingen</div>
-      <!--
-       <iframe frameborder="0" scrolling="no" title="Customer reviews online service" loading="auto" src="" style="position: relative; height: 28px; width: 100%; border-style: none; display: block; overflow: hidden;"></iframe>
-       -->
-    </div>
-
-</div>
-
-
-
-
-
-
-</footer>
-
-    <div id="FontAwesome">
-       <ul>
-           <li><i class="fa fa-thumbs-up" aria-hidden="true">Unicode: f164</i></li>
-           <li><i class="fa fa-truck" aria-hidden="true">Unicode: f0d1</i></li>
-           <li><i class="fa fa-phone" aria-hidden="true">Unicode: f095</i></li>
-           <li><i class="fa fa-clock-o" aria-hidden="true">Unicode: f017</i></li>
-           <li><i class="fa fa-chevron-down" aria-hidden="true">Unicode: f078</i></li>
-           <li><i class="fa fa-user" aria-hidden="true">Unicode: f007</i></li>
-           <li><i class="fa fa-search" aria-hidden="true">Unicode: f002</i></li>
-           <li><i class="fa fa-shopping-cart" aria-hidden="true">Unicode: f07a</i></li>
-       </ul>
-    </div>
+    </footer>
 
 
 
 </body>
+
 </html>
-
-
-
-
