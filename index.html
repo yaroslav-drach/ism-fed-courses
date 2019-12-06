@@ -56,7 +56,7 @@
         </div>
         <div class=header-inner>
             <div class="header-elements">
-                <div class="navigation-wrapper-desktop">
+                <div class="navigation-wrapper-desktop desktop-navigation">
                     <select class="navigation-items">
                         <option value="producten.html">Producten</option>
                         <option value="nieuwsbrief.html">Nieuwsbrief</option>
@@ -66,7 +66,7 @@
                     </select>
                 </div>
                 <div class="navigation-wrapper-mobile" style="display: none;">
-                    <nav>
+                    <nav class="mobile-navigation">
                         <ul>
                             <li><a href="#">Producten</a></li>
                             <li><a href="#">Nieuwsbrief</a></li>
@@ -79,7 +79,7 @@
                 <div class="search-bar">
                     <form class="search-form" action="https://www.domain.nl/catalogsearch/result/" method="get">
                         <input id="search-field" type="text" name="search-field" placeholder="Zoek product" maxlength="128" autocomplete="off" autocorrect="off">
-                        <button type="submit" title="Zoek" class="action search"></button>
+                        <button type="submit" title="Zoek" class="search-button"></button>
                     </form>
                 </div>
                 <div class="btw-wrapper">
@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="header-usp-items">
-                <ul class="header-usp-items-list">
+                <ul class="usp-items-list">
                     <li class="header-usp-item"><img src="media/svg/usp-hand-up.svg" alt="usp-hand-up" />Uitstekende klantenservice</li>
                     <li class="header-usp-item "><img src="media/svg/usp-truck.svg" alt="usp-truck" />Gratis levering of afhalen in onze shops</li>
                     <li class="header-usp-item"><img src="media/svg/usp-phone.svg" alt="usp-phone" />Gratis levering of afhalen in onze shops</li>
@@ -135,38 +135,38 @@
 
     <!-- Main content -->
 
-    <main id="main-content">
+    <main class="main-content">
 
         <div class="top-banners-block">
 
             <div class="top-banner main">
-                <div class="banner-content">
-                    <h4>Gehoorbescherming 20% korting</h4>
-                    <a class="banner-link" href="#">Bestel nu</a>
+                <div class="top-banner-content">
+                    <h4 class="top-banner-title">Gehoorbescherming 20% korting</h4>
+                    <a class="top-banner-link" href="#">Bestel nu</a>
                 </div>
-                <div class="banner-image">
-                    <img class="banner-image" src="media/png/banner-image-01.png" alt="banner-image-01" />
+                <div class="top-banner-image-container">
+                    <img class="top-banner-image" src="media/png/banner-image-01.png" alt="banner-image-01" />
                 </div>
             </div>
 
             <div class="top-banner info">
-                <div class="banner-content">
-                    <div class="info-block">
+                <div class="top-banner-content">
+                    <div class="top-banner-info-block">
                         <p>Heb je een vraag?</p>
                         <p>Wij staan voor je klaar!</p>
                     </div>
-                    <div class="info-block">
-                        <img class="banner-icon" src="media/svg/usp-clock.svg" />
-                        <h4>Openingstijden:</h4>
-                        <div class="info-working-hours-line">
+                    <div class="top-banner-info-block">
+                        <img class="info-block-icon" src="media/svg/usp-clock.svg" />
+                        <h4 class="info-block-title">Openingstijden:</h4>
+                        <div class="info-block-working-hours">
                             <p><span class="day">Ma-Vr</span><span class="hours">08.00 uur - 18.00 uur</span></p>
                             <p><span class="day">Za</span><span class="hours">08.00 uur - 16.00 uur</span></p>
                         </div>
                     </div>
                     <div class="info-block">
-                        <img class="banner-icon" src="media/svg/usp-phone.svg" />
-                        <h4>Telefonisch bereikbaar:</h4>
-                        <div class="info-working-hours-line">
+                        <img class="info-block-icon" src="media/svg/usp-phone.svg" />
+                        <h4 class="info-block-title">Telefonisch bereikbaar:</h4>
+                        <div class="info-block-working-hours">
                             <p><span class="day">Ma-Vr</span><span class="hours">08.00 uur - 18.00 uur</span></p>
                             <p><span class="day">Za</span><span class="hours">08.00 uur - 16.00 uur</span></p>
                         </div>
@@ -176,28 +176,28 @@
             </div>
 
             <div class="top-banner">
-                <div class="banner-content">
-                    <h4>Schuurmachines Vanaf € 150,-</h4>
-                    <a class="banner-link" href="#">Bestel nu</a>
+                <div class="top-banner-content">
+                    <h4 class="top-banner-title">Schuurmachines Vanaf € 150,-</h4>
+                    <a class="top-banner-link" href="#">Bestel nu</a>
                 </div>
-                <div class="banner-image">
-                    <img class="banner-image" src="media/png/banner-image-02.png" alt="banner-image-02" />
+                <div class="top-banner-image-container">
+                    <img class="top-banner-image" src="media/png/banner-image-02.png" alt="banner-image-02" />
                 </div>
             </div>
 
             <div class="top-banner">
-                <div class="banner-content">
-                    <h4>Rookmelders Vanaf € 50,-</h4>
-                    <a class="banner-link" href="#">Bestel nu</a>
+                <div class="top-banner-content">
+                    <h4 class="top-banner-title">Rookmelders Vanaf € 50,-</h4>
+                    <a class="top-banner-link" href="#">Bestel nu</a>
                 </div>
-                <div class="banner-image">
-                    <img class="banner-image" src="media/png/banner-image-03.png" alt="banner-image-03" />
+                <div class="top-banner-image-container">
+                    <img class="top-banner-image" src="media/png/banner-image-03.png" alt="banner-image-03" />
                 </div>
             </div>
         </div>
 
         <div class="product-slider">
-            <h4>Bestsellers</h4>
+            <h4 class="product-slider-title">Bestsellers</h4>
             <div class="owl-carousel owl-theme">
                 <div class="product-tile">
                     <div class="product-photo">
@@ -294,12 +294,12 @@
 
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
 
         <div class="footer-top-container">
 
             <div class="about-block">
-                <h4>Over bedrijf</h4>
+                <h4 class="about-block-title">Over bedrijf</h4>
                 <ul>
                     <li><a href="#">Assortiment</a></li>
                     <li><a href="#">Zakelijke klanten</a></li>
@@ -308,7 +308,7 @@
             </div>
 
             <div class="service-block">
-                <h4>Klantenservice</h4>
+                <h4 class="service-block-title">Klantenservice</h4>
                 <ul>
                     <li><a href="#">Bestellen</a></li>
                     <li><a href="#">Betalen</a></li>
@@ -321,10 +321,10 @@
             </div>
 
             <div class="newsletter-subscription-block">
-                <h4>Nieuwsbrief</h4>
-                <form class="subscribe-form" novalidate="novalidate" action="" method="post">
-                    <input name="newsletter-email" type="email" placeholder="E-mailadres">
-                    <button class="newsletter-subscribe-action" title="Aanmelden" type="submit"></button>
+                <h4 class="newsletter-subscription-block-title">Nieuwsbrief</h4>
+                <form class="newsletter-subscribe-form" novalidate="novalidate" action="" method="post">
+                    <input id="newsletter-subscribe-email" name="newsletter-subscribe-email" type="email" placeholder="E-mailadres">
+                    <button class="newsletter-subscribe-button" title="Aanmelden" type="submit"></button>
                 </form>
             </div>
 

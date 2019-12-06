@@ -262,9 +262,6 @@ header {
 
 
 
-
-
-
 /* BTW */
 
 
@@ -423,7 +420,7 @@ header {
 /* USP block*/
 
 
-.header-usp-items-list {
+.usp-items-list {
     display: flex;
     flex-direction: row;
     align-content: center;
