@@ -180,8 +180,8 @@ p {
 .page-container {
     max-width: 1103px;
     margin: 0 auto;
-    border: 1px solid #000;
-}
+    background-color: blueviolet;
+   }
 
 
 /* Header main */
@@ -502,16 +502,18 @@ header {
 
 .links-sidebar-container {
     order: -1;
-    flex-basis: 310px;
+    max-width: 318px;
+    /*flex-basis: 310px;*/
     min-width: 150px;
-    margin-right: 8px;
-}
+    /*margin-right: 8px;*/
+    background-color: #ccc;
+    }
 
 
 
 .link-item {
     margin-bottom: 17px;
-    line-height: 1;
+    line-height: 1.2;
 }
 
 
@@ -524,88 +526,107 @@ header {
 
 
 
-.main-content {
+.main-content-inner {
     display: flex;
-    width: 100%;
-    padding-top: 50px;
-    flex-wrap: wrap;
+    flex-direction: column;
+
 }
 
 
 .top-content {
-    flex-grow: 1;
+    margin-top: 50px;
 }
 
 
 .top-content-container {
-/*display: flex;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: 1;
+
+
+
 
 }
-
-
-
-
-
 
 
 
 
 /* Top Banners */
 
-/*
 .top-banners-block {
-    display: flex;
-    flex-direction: column;
-}
-*/
+   max-width: 785px;
 
-/* Genera Top Banner Settings */
-/*
+}
+
+.top-banners-block-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    /*flex-grow: 1;*/
+}
+
+
+.top-banners-block-inner {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* General Top Banner Settings */
+
 .top-banner {
-    background-color: #f5f5f5;
-    padding: 65px 35px 30px 35px;
+    background-color: #f00;
+   flex-basis: 50%;
+      padding-left: 7px;
+    /*padding: 65px 35px 30px 35px;
     border-radius: 3px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden;*/
+}
+
+.top-banner-inner {
+    background-color: #f5f5f5;
 
 }
 
 
 .top-banner-link {
-    display: inline-block;
+    /*display: inline-block;
     height: 40px;
     width: 78px;
     background-color: #000;
     border-radius: 3px;
     padding: 13px 8px;
     color: #fff;
-    text-decoration: none;
+    text-decoration: none;*/
 
 
 }
 
 .top-banner-image {
-    float: right;
+  /*  float: right;
     display: inline-block;
     position: absolute;
     bottom: 0;
     right: 0;
-    margin: 36px;
+    margin: 36px;*/
 
 }
-*/
+
 
 
 /* Main Banner */
 
-/*
+
 .top-banner.main {
-    padding-top: 30px;
-    max-width: 526px;
-    margin-right: 7px;
+    flex-basis: 66.66%;
+
 
 }
-
+/*
 .top-banner.main .top-banner-title {
     font-size: 32px;
 
@@ -615,14 +636,13 @@ header {
 
 /* Info Banner */
 
-/*
+
 .top-banner.info {
-    padding-top: 21px;
-    padding-right: 23px;
-    flex-basis: 253px;
+ flex-basis: 33.33%;
+
 
 }
-
+/*
 .top-banner-info-block .info-block-icon {
     max-height: 13px;
     max-width: 13px;
