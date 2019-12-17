@@ -165,10 +165,12 @@ select::-ms-expand {
 
 
 
-h2 {
+
+
+h4 {
     font-size: 24px;
-    margin: 0 0 11px;
-    line-height: 1.3;
+    margin: 0 0 10px 0;
+    line-height: 1.1;
 }
 
 
@@ -192,8 +194,11 @@ p {
 /* Page Container*/
 
 .page-container {
-    max-width: 1103px;
+    max-width: 1110px;
     margin: 0 auto;
+    overflow: hidden;
+
+    background-color: cadetblue;
 }
 
 
@@ -228,7 +233,7 @@ header {
     flex-basis: 152px;
     min-width: 50px;
     max-height: 80px;
-    margin-right: 8px;
+    margin: 0 8px;
 }
 
 
@@ -549,6 +554,7 @@ header {
     flex-basis: 310px;
     min-width: 150px;
     margin-bottom: 8px;
+    padding-left: 8px;
     background-color: #ccc;
 
 }
@@ -603,6 +609,8 @@ header {
     padding: 20px 25px 40px 35px;
     margin-left: 7px;
     flex-grow: 1;
+    overflow: hidden;
+    border-radius: 3px;
 }
 
 .top-banner .block-title {
@@ -629,7 +637,7 @@ header {
 }
 
 .top-banner-image-container {
-    height: 80px;
+    height: 85px;
     width: 120px;
     background-color: coral;
     margin-left: 15px;
@@ -748,35 +756,219 @@ header {
 
 
 
-/*
-.top-banner-info-block .info-block-title {
-    display: block;
-
-}
-*/
-
-
-
-
-
-
-
 
 
 
 /* Product Slider */
 
 
+.slider-section {
+    display: flex;
+    background-color: #f4f4f4;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    overflow: hidden;
+    }
+
+.slider-section .block-title {
+   padding: 6px 26px 3px 26px;
+
+}
+
+.product-slider-wrapper {
+    background-color: #e8e8e8;
+    width: 100%;
+}
+
+.product-slider {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 1px);
+
+}
+
+.product-tile {
+    min-height: 278px;
+    background-color: #f4f4f4;
+    width: 20%;
+    padding: 40px 30px 17px 30px;
+    margin: 1px 1px 1px 0px;
+
+}
+
+.product-tile-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+.product-photo {
+    width: 100%;
+    height: 85px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.product-photo img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+
+.product-name {
+
+}
+
+
+.product-item-details {
+}
+
+
+
+.product-sku {
+    margin-bottom: 13px;
+}
+
+.product-price-box {
+    font-size: 40px;
+    line-height: 1;
+}
+
+
+
+
+
+
+
+
 /* Bottom Banners */
+
+.bottom-banners-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+
+    color: #fff;
+    border-radius: 3px;
+
+    margin-bottom: 34px;
+}
+
+.bottom-banner {
+    width: calc(50% - 3px);
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-bottom: 6px;
+}
+
+
+
+.bottom-banner-image-container {
+    max-width: 552px;
+    max-height: 224px;
+
+}
+
+.bottom-banner-image {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.banner-title-wrapper {
+    display: block;
+    height: 100%;
+    padding: 20px 23px;;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-shadow: 0px 0px 9px #555;
+
+}
+
+
+
+.banner-title .block-title {
+    font-size: 40px;
+    line-height: 1.1;
+
+}
+
+
 
 
 /* Footer */
+
+.footer {
+
+    padding: 50px 0;
+}
 
 
 .footer-wrapper-inner {
     display: flex;
     flex-direction: column;
 }
+
+.footer-top-container-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f4f4f4;
+    align-items: flex-start;
+}
+
+.about-block {width: 25%;}
+
+.service-block {width: 25%}
+
+.newsletter-subscription-block {width: 25%}
+
+.footer-icons {
+    width: 25%;
+    align-self: center;
+}
+
+
+
+
+.footer .block-items a {
+    text-decoration: none;
+    color: #000;
+}
+
+.payment-items {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+
+}
+
+.payment-item {
+    width: 126px;
+    height: 49px;
+
+}
+
+.payment-item img {
+    max-height: 100%;
+    max-width: 100%;
+
+}
+
 
 .footer-rating-stars {
     display: inline-block;
