@@ -73,16 +73,47 @@ hr {
 
 /* We inherit fonts for inputs and buttons */
 input,
-button,
 textarea,
 select {
     font: inherit;
 }
 
+/* Reset styles for button */
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+/* Set custom class for button and links styling */
+.btn {
+    display: inline-block;
+    text-align: center;
+
+    text-decoration: none;
+    /* for links */
+
+    margin: 2px 0;
+
+    border: solid 1px transparent;
+    border-radius: 3px;
+
+    padding: 0.5em 1em;
+
+    color: #fff;
+    background-color: #000;
+}
+
+
+
 img {
     display: block;
-    }
-
+}
 
 
 
@@ -552,6 +583,7 @@ header {
     order: -1;
     flex-grow: 1;
     flex-basis: 310px;
+    max-width: 310px;
     min-width: 150px;
     margin-bottom: 8px;
     padding-left: 8px;
@@ -652,15 +684,10 @@ header {
 
 
 .top-banner-link {
-    display: inline-block;
     min-height: 41px;
     min-width: 78px;
     max-width: 150px;
-    background-color: #000;
-    border-radius: 3px;
     padding: 12px 8px;
-    color: #fff;
-    text-decoration: none;
 }
 
 
@@ -679,7 +706,7 @@ header {
 }
 
 .main .top-banner-content {
-   /* flex-basis: 304px;*/
+    /* flex-basis: 304px;*/
 }
 
 
@@ -718,7 +745,9 @@ header {
 .top-banner-info-block {
     line-height: 1.4;
 
-}.top-banner-info-block p{
+}
+
+.top-banner-info-block p {
     margin-bottom: 0px;
 
 }
@@ -771,10 +800,10 @@ header {
     margin-bottom: 40px;
     border-radius: 3px;
     overflow: hidden;
-    }
+}
 
 .slider-section .block-title {
-   padding: 6px 26px 3px 26px;
+    padding: 6px 26px 3px 26px;
 
 }
 
@@ -821,13 +850,10 @@ header {
 }
 
 
-.product-name {
-
-}
+.product-name {}
 
 
-.product-item-details {
-}
+.product-item-details {}
 
 
 
@@ -887,7 +913,8 @@ header {
 .banner-title-wrapper {
     display: block;
     height: 100%;
-    padding: 20px 23px;;
+    padding: 20px 23px;
+    ;
     position: absolute;
     top: 0;
     left: 0;
@@ -909,37 +936,11 @@ header {
 
 /* Footer */
 
+
 .footer {
-
-    padding: 50px 0;
-}
-
-
-.footer-wrapper-inner {
     display: flex;
     flex-direction: column;
 }
-
-.footer-top-container-inner {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #f4f4f4;
-    align-items: flex-start;
-}
-
-.about-block {width: 25%;}
-
-.service-block {width: 25%}
-
-.newsletter-subscription-block {width: 25%}
-
-.footer-icons {
-    width: 25%;
-    align-self: center;
-}
-
-
 
 
 .footer .block-items a {
@@ -947,29 +948,99 @@ header {
     color: #000;
 }
 
-.payment-items {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: flex-end;
-    flex-wrap: wrap;
 
+/* Footer Top Container*/
 
+.footer-top-container {
+    background-color: #f4f4f4;
 }
 
-.payment-item {
-    width: 126px;
-    height: 49px;
+.footer-top-container-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 
+    width: 100%;
+    padding: 50px 0;
+
+    background-color: #f4f4f4;
+}
+
+
+/* Footer Top Container Blocks */
+
+
+/* About Block */
+.about-block {
+    width: 30%;
+}
+
+
+/* Service Block */
+.service-block {
+    width: 21%
+}
+
+
+/* Newsletter Subscription Block */
+.newsletter-subscription-block {
+    width: calc(26% - 45px);
+    margin-right: 45px;
+}
+
+#newsletter-subscribe-email {
+    display: block;
+    width: 100%;
+    /* border: none;*/
+    margin-bottom: 6px;
+}
+
+
+.newsletter-subscribe-button {
+    min-height: 42px;
+    width: 100%;
+    min-width: 150px;
+    padding: 8px 12px;
+}
+
+
+
+
+/* Payment icons */
+
+.footer-icons {
+    width: 23%;
+    align-self: center;
+    /*margin-left: 45px;*/
+}
+
+
+.payment-item {
+    display: flex;
+    float: left;
+    width: 50%;
+    max-width: 126px;
+    height: 50px;
+    margin-top: 20px;
 }
 
 .payment-item img {
+    margin: auto;
     max-height: 100%;
     max-width: 100%;
-
 }
 
 
+
+/* Footer Bottom Container Blocks */
+
+
+/* Footer Bottom Menu */
+
+
+
+/* Footer Rating */
 .footer-rating-stars {
     display: inline-block;
 }
