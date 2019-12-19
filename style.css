@@ -888,6 +888,7 @@ header {
     flex-wrap: wrap;
     flex-basis: 100%;
 
+
     color: #fff;
     border-radius: 3px;
 
@@ -900,13 +901,14 @@ header {
     overflow: hidden;
     border-radius: 3px;
     margin-bottom: 6px;
+    max-height: 224px;
 }
 
 
 
 .bottom-banner-image-container {
-    max-width: 552px;
-    max-height: 224px;
+    max-height: 100%;
+    max-width: 100%;
 
 }
 
@@ -958,7 +960,7 @@ header {
 
 .footer-top-container-inner {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
 
@@ -974,7 +976,7 @@ header {
 
 /* About Block */
 .about-block {
-    max-width: calc(30% - 18px);
+    width: calc(30% - 18px);
     min-width: 200px;
     margin-right: 10px;
     margin-left: 8px;
@@ -986,7 +988,7 @@ header {
 
 /* Service Block */
 .service-block {
-    max-width: calc(21% - 18px);
+    width: calc(21% - 18px);
     min-width: 200px;
     margin-right: 10px;
     margin-left: 8px;
@@ -998,7 +1000,7 @@ header {
 
 /* Newsletter Subscription Block */
 .newsletter-subscription-block {
-    max-width: calc(26% - 40px);
+    width: calc(26% - 40px);
     min-width: 200px;
     margin-right: 40px;
     margin-left: 8px;
@@ -1028,7 +1030,7 @@ header {
 /* Payment icons */
 
 .footer-icons {
-    max-width: calc(23% - 8px);
+    width: calc(23% - 8px);
     min-width: 200px;
     align-self: center;
     margin-right: 8px;
