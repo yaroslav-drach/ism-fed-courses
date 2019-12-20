@@ -4,7 +4,7 @@
 	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
 	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
 ]>
-<svg  version="1.0" id="Ebene_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="175.748" height="38.786"
+<svg  version="1.0" id="Ebene_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" height="30"
 	 viewBox="0 0 175.748 38.786" overflow="visible" enable-background="new 0 0 175.748 38.786" xml:space="preserve">
 <polygon fill="#FECC00" points="175.748,0 175.748,38.786 0,38.786 0,0 175.748,0 175.748,0 "/>
 <path fill="#D50029" d="M56.665,16.206c-0.768,1.04-2.053,2.848-2.835,3.904c-0.397,0.537-1.114,1.512,1.263,1.512

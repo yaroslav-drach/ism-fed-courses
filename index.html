@@ -177,7 +177,9 @@
                     <div class="block-title big-title">Bestsellers</div>
 
                     <div class="product-slider-wrapper">
-                        <div class="product-slider">
+
+                           <button class="left-arrow slider-arrow"><img src="media/png/left-arrow-icon-2x.png" /></button>
+                           <div class="product-slider">
 
                             <div class="product-tile">
                                 <div class="product-tile-inner">
@@ -249,8 +251,11 @@
                                     </div>
                                 </div>
                             </div>
+
 
                         </div>
+                        <button class="right-arrow slider-arrow"><img src="media/png/right-arrow-icon-2x.png" /></button>
+
                     </div>
 
                 </section>
@@ -261,8 +266,8 @@
                         <div class="bottom-banner-image-container">
                             <img class="bottom-banner-image" src="media/png/bottom-banner-01-2x.png" alt="bottom-banner-01" />
                         </div>
-                        <div class="banner-title-wrapper">
-                            <div class="banner-title">
+                        <div class="bottom-banner-title-wrapper">
+                            <div class="banner-title-container">
                                 <div class="block-title">Nachtbezorging</div>
                                 <div class="bottom-banner-subtitle">Vandaag besteld vannacht al in huis</div>
                             </div>
@@ -272,7 +277,7 @@
                         <div class="bottom-banner-image-container">
                             <img class="bottom-banner-image" src="media/png/bottom-banner-02-2x.png" alt="bottom-banner-02" />
                         </div>
-                        <div class="banner-title-wrapper">
+                        <div class="bottom-banner-title-wrapper">
                             <div class="banner-title">
                                 <div class="bottom-banner-title block-title large-text">Nachtbezorging</div>
                                 <div class="bottom-banner-subtitle">Vandaag besteld vannacht al in huis</div>
@@ -303,7 +308,7 @@
                             <div class="header-elements">
                                 <div class="navigation-wrapper">
                                     <nav class="navigation-menu">
-                                       <ul class="navigation-items">
+                                        <ul class="navigation-items">
                                             <li class="navigation-item"><a href="#">Producten</a></li>
                                             <li class="navigation-item item-visibility"><a href="#">Nieuwsbrief</a></li>
                                             <li class="navigation-item item-visibility"><a href="#">Sales</a></li>
@@ -356,7 +361,7 @@
 
                     <!-- About Block -->
                     <div class="about-block">
-                        <h4 class="about-block-title">Over bedrijf</h4>
+                        <h4 class="block-title">Over bedrijf</h4>
                         <ul class="block-items">
                             <li><a href="#">Assortiment</a></li>
                             <li><a href="#">Zakelijke klanten</a></li>
@@ -366,7 +371,7 @@
 
                     <!-- Service Block -->
                     <div class="service-block">
-                        <h4 class="service-block-title">Klantenservice</h4>
+                        <h4 class="block-title">Klantenservice</h4>
                         <ul class="block-items">
                             <li><a href="#">Bestellen</a></li>
                             <li><a href="#">Betalen</a></li>
@@ -380,21 +385,24 @@
 
                     <!-- Newsletter Subscription Block -->
                     <div class="newsletter-subscription-block">
-                        <h4 class="newsletter-subscription-block-title">Nieuwsbrief</h4>
+                        <h4 class="block-title">Nieuwsbrief</h4>
                         <form class="newsletter-subscribe-form" novalidate="novalidate" action="" method="post">
                             <input id="newsletter-subscribe-email" name="newsletter-subscribe-email" type="email" placeholder="E-mailadres">
+                            <div class="error newsletter-error">A valid e-mail address has not been entered. Check if the e-mail address contains an @ and a dot. And if there are no spaces in it</div>
                             <button class="newsletter-subscribe-button btn" title="Aanmelden" type="submit">Aanmelden</button>
                         </form>
                     </div>
 
                     <!-- Payment icons -->
                     <div class="footer-icons">
-                        <ul class="payment-items">
-                            <li class="payment-item"><img src="media/payment-icons/iban-logo.png" alt="iban-logo" title="IBAN" /></li>
-                            <li class="payment-item"><img src="media/payment-icons/ideal-logo.svg" alt="ideal-logo" title="iDeal" /></li>
-                            <li class="payment-item"><img src="media/payment-icons/dhl-logo.svg" alt="dhl-logo" title="DHL" /></li>
-                            <li class="payment-item"><img src="media/payment-icons/thuiswinkel-logo.png" alt="thuiswinkel-logo" title="Thuiswinkel" /></li>
-                        </ul>
+                        <div class="payment-items-container">
+                            <ul class="payment-items">
+                                <li class="payment-item"><img src="media/payment-icons/iban-logo.png" alt="iban-logo" title="IBAN" /></li>
+                                <li class="payment-item"><img src="media/payment-icons/ideal-logo.svg" alt="ideal-logo" title="iDeal" /></li>
+                                <li class="payment-item"><img src="media/payment-icons/dhl-logo.svg" alt="dhl-logo" title="DHL" /></li>
+                                <li class="payment-item"><img src="media/payment-icons/thuiswinkel-logo.png" alt="thuiswinkel-logo" title="Thuiswinkel" /></li>
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
@@ -406,21 +414,21 @@
             <div class="page-container">
                 <div class="footer-bottom-container-inner">
 
-                <!-- Footer Bottom Menu -->
-                <div class="footer-bottom-menu">
-                    <a class="footer-bottom-menu-item" href="#" title="">Algemene voorwarden</a><a class="footer-bottom-menu-item" href="#" title="">Privacy</a><a class="footer-bottom-menu-item" href="#" title="">Cookies</a><a class="footer-bottom-menu-item" href="#" title="">Disclaimer</a>
-                </div>
-
-                <!-- Footer Rating -->
-                <div class="footer-rating">
-                    <div class="footer-rating-stars">
-                        <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                    <!-- Footer Bottom Menu -->
+                    <div class="footer-bottom-menu">
+                        <a class="footer-bottom-menu-item" href="#" title="">Algemene voorwarden</a><a class="footer-bottom-menu-item" href="#" title="">Privacy</a><a class="footer-bottom-menu-item" href="#" title="">Cookies</a><a class="footer-bottom-menu-item" href="#" title="">Disclaimer</a>
                     </div>
-                    <div class="footer-rating-reviews"><span class="reviews-number">1.011</span> beoordelingen</div>
-                    <!-- Instead of images "footer-rating-stars" and "footer-rating-reviews" we should use reviews online service
+
+                    <!-- Footer Rating -->
+                    <div class="footer-rating">
+                        <div class="footer-rating-stars">
+                            <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <div class="footer-rating-reviews"><span class="reviews-number">1.011</span> beoordelingen</div>
+                        <!-- Instead of images "footer-rating-stars" and "footer-rating-reviews" we should use reviews online service
                            <iframe frameborder="0" scrolling="no" title="Customer reviews online service" loading="auto" src="" style="position: relative; height: 14px; width: 100%; border-style: none; display: block; overflow: hidden;"></iframe>
                         -->
-                </div>
+                    </div>
 
                 </div>
             </div>
