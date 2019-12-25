@@ -673,7 +673,11 @@ p {
 
 
 .top-content {
+<<<<<<< HEAD
 /*     background-color: aqua; ----------TestBackground---------*/
+=======
+
+>>>>>>> origin/master
 }
 
 
@@ -698,25 +702,25 @@ p {
 
 
 .links-sidebar-container {
-    flex-grow: 1;
-    flex-basis: 310px;
-    /*max-width: 310px;*/
+    flex: 1 1 30%;
     min-width: 180px;
-    margin-bottom: 8px;
+    padding-bottom: 8px;
     padding-left: 8px;
-    /* background-color: burlywood; ----------TestBackground---------*/
-    overflow: hidden;
+    background-color: #f00; /* ----------TestBackground---------*/
+
 
 }
 
+.links-sidebar {
+    background-color: #0f0;
+    overflow: hidden;
+}
 
 
 .link-item {
+    background-color: #00f;
     line-height: 1.2;
-
 }
-
-
 
 
 .link-item:not(:last-child) {
@@ -736,7 +740,7 @@ p {
 
 
 /* Top Banners */
-
+/*
 @media screen and (max-width: 767px) {
 
     .top-content-container {
@@ -762,14 +766,40 @@ p {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+*/
+
+.product-banners {
+    flex: 1 1 70%;
+}
+
+.product-banners-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #00f;
+
+
+}
+
+.banner {
+    flex: 1 1 50%;
+    padding: 7px;
+    border: 1px solid #0f0;
+
+}
+
+.banner-inner {
+    background-color: #f4f4f4;
+    border: 1px solid #f00;
+    height: 100%;
+}
 
 
 
 
 /* General Top Banner Settings */
-
+/*
 .top-banner {
-    background-color: #f4f4f4;
     flex-basis: calc(50% - 7px);
     min-width: 380px;
     margin-bottom: 8px;
@@ -779,6 +809,10 @@ p {
     flex-grow: 1;
     overflow: hidden;
     border-radius: 3px;
+}
+
+.top-banner-inner {
+    background-color: #f4f4f4;
 }
 
 
@@ -804,7 +838,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /*background-color: bisque;  ----------TestBackground---------*/
+
     overflow: hidden;
 }
 
@@ -813,13 +847,13 @@ p {
 
 .top-banner-content {
     flex-grow: 1;
-    /*background-color: brown; ----------TestBackground---------*/
+
 }
 
 .top-banner-image-container {
     height: 85px;
     width: 120px;
-    /*background-color: coral; ----------TestBackground---------*/
+
     margin-left: 15px;
     flex-shrink: 0;
 }
@@ -837,12 +871,12 @@ p {
     max-width: 150px;
     padding: 12px 8px;
 }
-
+*/
 
 
 /* Main Banner */
 
-
+/*
 .top-banner.main {
     flex-basis: calc(66.66% - 7px);
     min-width: 520px;
@@ -867,18 +901,18 @@ p {
 
 .main .top-banner-image-container {
     align-self: flex-end;
-    /* background-color: cadetblue; ----------TestBackground---------*/
+
     height: 145px;
     width: 135px;
 }
 
-
+*/
 
 /* Info Banner */
-
+/*
 
 .top-banner.info {
-    /*flex-basis: calc(33.33% - 4px);*/
+
     flex-basis: calc(33.33% - 7px);
     min-width: 256px;
 }
@@ -888,7 +922,7 @@ p {
 .info .top-banner-inner {
     align-items: flex-start;
 }
-
+*/
 .info .top-banner-content {
     flex-basis: 100%;
 }
@@ -938,7 +972,7 @@ p {
 }
 
 
-
+/*
 @media screen and (max-width: 767px) {
     .top-banner,
     .top-banner.main,
@@ -968,7 +1002,7 @@ p {
         align-self: center;
         height: 85px;
         width: 120px;
-        /*background-color: coral; ----------TestBackground---------*/
+
         margin-left: 15px;
         flex-shrink: 0;
     }
@@ -976,13 +1010,7 @@ p {
 
 }
 
-/*
-@media screen and (max-width: 480px) {
-
-
-}
-
- */
+*/
 
 
 
