@@ -111,7 +111,7 @@ a:hover {
 .btn {
     display: inline-block;
     text-align: center;
-
+    line-height: 1;
     text-decoration: none;
     /* for links */
 
@@ -237,18 +237,6 @@ p {
 
 .block-title {
     font-size: 24px;
-}
-
-.big-title {
-    font-size: 32px;
-}
-
-
-@media screen and (max-width: 767px) {
-
-    .big-title {
-        font-size: 24px;
-    }
 }
 
 
@@ -672,21 +660,12 @@ p {
 }
 
 
+
 .top-content {
-<<<<<<< HEAD
-/*     background-color: aqua; ----------TestBackground---------*/
-=======
-
->>>>>>> origin/master
-}
-
-
-.top-content-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 
@@ -702,7 +681,7 @@ p {
 
 
 .links-sidebar-container {
-    flex: 1 1 30%;
+    flex: 1 1 28.5%;
     min-width: 180px;
     padding-bottom: 8px;
     padding-left: 8px;
@@ -724,7 +703,7 @@ p {
 
 
 .link-item:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 }
 
 
@@ -769,30 +748,132 @@ p {
 */
 
 .product-banners {
-    flex: 1 1 70%;
+    flex: 1 1 71.5%;
 }
 
 .product-banners-container {
-
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid #00f;
+    background-color: aqua;
 
 
 }
 
 .banner {
     flex: 1 1 50%;
-    padding: 7px;
-    border: 1px solid #0f0;
+    min-width: 33%;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    min-width: 380px;
+    background-color: blueviolet;
+
+}
+
+
+.banner .block-title {
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.banner:first-child .block-title {
+    font-size: 32px;
+    margin-top: 8px;
+}
+
+
+.small-banner {
+    flex: 0 1 33%;
+    min-width: 260px;
 
 }
 
 .banner-inner {
+    display: flex;
+    justify-content: space-between;
     background-color: #f4f4f4;
-    border: 1px solid #f00;
     height: 100%;
+    min-height: 225px;
+    padding: 18px 25px 30px 35px;
+    overflow: hidden;
+    border-radius: 3px;
+    align-items: center;
 }
+
+
+.banner:first-child .banner-inner {
+    align-items: flex-start;
+}
+
+
+
+
+.banner-image-container {
+    max-height: 85px;
+    max-width: 120px;
+    margin-left: 15px;
+    flex-shrink: 0;
+}
+
+
+.banner:first-child .banner-image-container {
+    align-self: flex-end;
+
+    max-height: 145px;
+    max-width: 135px;
+}
+
+
+.banner-image-container img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+
+.banner-link {
+    min-height: 41px;
+    min-width: 78px;
+    max-width: 150px;
+    padding: 12px 8px;
+}
+
+
+
+
+.banner .info-block:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+
+.banner .info-block p {
+    margin-bottom: 0px;
+
+}
+
+
+.banner .info-block-title .title-icon {
+    margin-left: -20px;
+    margin-right: 8px;
+}
+
+.info-block-working-hours .working-hours-list {
+    display: table;
+    width: 100%;
+}
+
+.info-block-working-hours .day {
+    display: table-cell;
+    float: left;
+    width: 25%
+}
+
+.info-block-working-hours .hours {
+    display: table-cell;
+    float: left;
+    width: 75%;
+
+}
+
 
 
 
@@ -923,53 +1004,8 @@ p {
     align-items: flex-start;
 }
 */
-.info .top-banner-content {
-    flex-basis: 100%;
-}
-
-.top-banner-info-block:not(:last-child) {
-    margin-bottom: 16px;
-}
-
-.top-banner-info-block {
-    line-height: 1.4;
-
-}
-
-.top-banner-info-block p {
-    margin-bottom: 0px;
-
-}
 
 
-.info-block-title {
-    position: relative;
-}
-
-.info-block-title-icon {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: -20px;
-}
-
-.info-block-working-hours .working-hours-list {
-    display: table;
-    width: 100%;
-}
-
-.info-block-working-hours .day {
-    display: table-cell;
-    float: left;
-    width: 25%
-}
-
-.info-block-working-hours .hours {
-    display: table-cell;
-    float: left;
-    width: 75%;
-
-}
 
 
 /*
