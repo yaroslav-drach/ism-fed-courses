@@ -150,14 +150,10 @@ body {
     font-weight: 900;
     font-size: 14px;
     min-height: 100vh;
-
-    /*background-color: aquamarine; ----------TestBackground---------*/
-
     flex-direction: column;
     justify-content: flex-start;
 
 }
-
 
 
 
@@ -666,6 +662,19 @@ p {
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 40px;
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .top-content {
+        flex-flow: column wrap;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
 }
 
 
@@ -673,31 +682,31 @@ p {
 
 /* Sidebar with links*/
 
-@media screen and (min-width: 768px) {
+.links-sidebar-container {
+    flex: 1 1 28.5%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    order: -1;
+}
+
+
+
+@media screen and (max-width: 767px) {
     .links-sidebar-container {
-        order: -1;
+        order: 0;
     }
 }
 
 
-.links-sidebar-container {
-    flex: 1 1 28.5%;
-    min-width: 180px;
-    padding-bottom: 8px;
-    padding-left: 8px;
-    background-color: #f00; /* ----------TestBackground---------*/
-
-
-}
 
 .links-sidebar {
-    background-color: #0f0;
     overflow: hidden;
 }
 
 
 .link-item {
-    background-color: #00f;
     line-height: 1.2;
 }
 
@@ -719,33 +728,6 @@ p {
 
 
 /* Top Banners */
-/*
-@media screen and (max-width: 767px) {
-
-    .top-content-container {
-        flex-wrap: wrap;
-        padding-top: 15px;
-    }
-
-    .top-banners-block {
-        margin-bottom: 30px;
-    }
-
-}
-
-.top-banners-block {
-    flex-basis: 785px;
-    flex-grow: 1;
-
-}
-
-.top-banners-block-inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-*/
 
 .product-banners {
     flex: 1 1 71.5%;
@@ -759,15 +741,45 @@ p {
 
 }
 
+
+/* General Top Banner Settings */
+
 .banner {
     flex: 1 1 50%;
-    min-width: 33%;
     padding-bottom: 7px;
     padding-left: 7px;
     min-width: 380px;
     background-color: blueviolet;
 
 }
+
+
+@media screen and (max-width: 767px) {
+    .banner {
+        flex: 1 1 100%;
+        padding-left: 0px;
+    }
+}
+
+
+
+
+.banner:first-child {
+    min-width: 525px;
+}
+
+@media screen and (max-width: 767px) {
+    .banner {
+        min-width: 320px;
+    }
+
+    .banner:first-child {
+        min-width: 320px;
+    }
+}
+
+
+
 
 
 .banner .block-title {
@@ -780,12 +792,27 @@ p {
     margin-top: 8px;
 }
 
+@media screen and (max-width: 767px) {
+    .banner .block-title {
+        margin-top: 0px;
+    }
+
+    .banner:first-child .block-title {
+        margin-top: 0px;
+        font-size: 24px;
+    }
+}
+
+
+
 
 .small-banner {
-    flex: 0 1 33%;
+    flex: 1 1 33%;
     min-width: 260px;
-
 }
+
+
+
 
 .banner-inner {
     display: flex;
@@ -800,33 +827,70 @@ p {
 }
 
 
+
 .banner:first-child .banner-inner {
     align-items: flex-start;
+}
+
+
+@media screen and (max-width: 767px) {
+    .banner-inner {
+        border-radius: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        min-height: 180px;
+    }
+
+    .banner:first-child .banner-inner {
+        align-items: center;
+    }
+}
+
+
+
+
+
+.banner-content {
+    flex: 1 1 46%;
+    background-color: cadetblue;
+    flex-grow: 1;
 }
 
 
 
 
 .banner-image-container {
-    max-height: 85px;
-    max-width: 120px;
+    height: 85px;
+    width: 120px;
     margin-left: 15px;
     flex-shrink: 0;
+    background-color: aqua;
 }
 
 
 .banner:first-child .banner-image-container {
     align-self: flex-end;
-
-    max-height: 145px;
-    max-width: 135px;
+    height: 145px;
+    width: 135px;
 }
+
+
+@media screen and (max-width: 767px) {
+    .banner:first-child .banner-image-container {
+        align-self: center;
+        height: 85px;
+        width: 120px;
+    }
+}
+
 
 
 .banner-image-container img {
     max-height: 100%;
     max-width: 100%;
 }
+
+
 
 
 
@@ -839,7 +903,7 @@ p {
 
 
 
-
+/* Banner Info Block */
 .banner .info-block:not(:last-child) {
     margin-bottom: 16px;
 }
@@ -877,181 +941,31 @@ p {
 
 
 
-
-/* General Top Banner Settings */
-/*
-.top-banner {
-    flex-basis: calc(50% - 7px);
-    min-width: 380px;
-    margin-bottom: 8px;
-    min-height: 225px;
-    padding: 20px 25px 40px 35px;
-    margin-left: 7px;
-    flex-grow: 1;
-    overflow: hidden;
-    border-radius: 3px;
-}
-
-.top-banner-inner {
-    background-color: #f4f4f4;
-}
-
-
-@media screen and (max-width: 767px) {
-    .top-banner {
-        margin-left: 0;
-        min-height: 0;
-        border-radius: 0;
-        padding: 10px 15px 10px 15px;
-    }
-
-}
-
-
-.top-banner .block-title {
-    margin-bottom: 10px;
-}
-
-
-.top-banner-inner {
-    display: flex;
-    height: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    overflow: hidden;
-}
-
-
-
-
-.top-banner-content {
-    flex-grow: 1;
-
-}
-
-.top-banner-image-container {
-    height: 85px;
-    width: 120px;
-
-    margin-left: 15px;
-    flex-shrink: 0;
-}
-
-.top-banner-image-container img {
-    max-height: 100%;
-    max-width: 100%;
-}
-
-
-
-.top-banner-link {
-    min-height: 41px;
-    min-width: 78px;
-    max-width: 150px;
-    padding: 12px 8px;
-}
-*/
-
-
-/* Main Banner */
-
-/*
-.top-banner.main {
-    flex-basis: calc(66.66% - 7px);
-    min-width: 520px;
-    padding-top: 30px;
-
-}
-
-@media screen and (max-width: 767px) {
-    .top-banner.main {
-        padding-top: 10px;
-    }
-
-}
-
-
-
-.main .top-banner-inner {
-    align-items: flex-start;
-}
-
-
-
-.main .top-banner-image-container {
-    align-self: flex-end;
-
-    height: 145px;
-    width: 135px;
-}
-
-*/
-
-/* Info Banner */
-/*
-
-.top-banner.info {
-
-    flex-basis: calc(33.33% - 7px);
-    min-width: 256px;
-}
-
-
-
-.info .top-banner-inner {
-    align-items: flex-start;
-}
-*/
-
-
-
-
-/*
-@media screen and (max-width: 767px) {
-    .top-banner,
-    .top-banner.main,
-    .top-banner.info  {
-        min-width: 0;
-        flex-basis: 100%;
-    }
-
-
-    .top-banner-content {
-        flex-grow: 0;
-        flex-basis: 65%;
-    }
-
-    .top-banner-inner {
-        flex-wrap: wrap;
-
-    }
-
-
-    .main .top-banner-inner {
-        align-items: center;
-    }
-
-
-    .main .top-banner-image-container {
-        align-self: center;
-        height: 85px;
-        width: 120px;
-
-        margin-left: 15px;
-        flex-shrink: 0;
-    }
-
-
-}
-
-*/
-
-
-
-
 /* Product Slider */
+
+
+.slider-arrow {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: calc(50% - 35px);
+
+}
+
+.slider-arrow img {
+    max-height: 35px;
+    max-width: 35px;
+}
+
+
+.left-arrow {
+    left: -22px;
+}
+
+.right-arrow {
+    right: -22px;
+}
+
 
 
 .slider-section {
@@ -1070,46 +984,24 @@ p {
 
 }
 
-.product-slider-wrapper {
+.product-slider-container {
     background-color: #e8e8e8;
+    background-color: #f00;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .product-slider {
     display: flex;
-    justify-content: space-between;
+    position: relative;
+    left: -20%;
     width: calc(100% + 1px);
 }
 
-.slider-arrow {
-    height: 35px;
-    width: 35px;
-    position: absolute;
-    top: calc(50% - 35px);
-
-}
-
-.slider-arrow img {
-    max-height: 35px;
-    max-width: 35px;
-}
-
-
-.left-arrow {
-    left: -23px;
-}
-
-.right-arrow {
-    right: -22px;
-}
-
-
-
-
-
 
 .product-tile {
+    flex: 0 0 20%;
     min-height: 278px;
     background-color: #f4f4f4;
     width: 20%;
@@ -1119,6 +1011,41 @@ p {
     flex-grow: 1;
 
 }
+
+@media screen and (max-width: 991px) {
+
+    .product-slider {
+        left: -25%;
+    }
+
+    .product-tile {
+        flex-basis: 25%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .product-slider {
+        left: -33.33%;
+    }
+
+    .product-tile {
+        flex-basis: 33.33%;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+
+    .product-slider {
+        left: -50%;
+    }
+
+    .product-tile {
+        flex-basis: 50%;
+    }
+}
+
 
 .product-tile-inner {
     display: flex;
