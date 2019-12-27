@@ -124,6 +124,8 @@ a:hover {
 
     color: #fff;
     background-color: #000;
+
+    outline: none
 }
 
 .btn:hover {
@@ -945,69 +947,86 @@ p {
 
 
 .slider-arrow {
+    display: block;
+
     height: 35px;
     width: 35px;
     position: absolute;
-    top: calc(50% - 35px);
+    /*top: calc(50% - 35px);*/
+    top: 45%;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 35px;
+
+    outline: none;
+
+    z-index: 10;
+
+
 
 }
 
+
+
+/*
 .slider-arrow img {
     max-height: 35px;
     max-width: 35px;
 }
-
+*/
 
 .left-arrow {
+    background-image: url(media/png/left-arrow-icon-1x.png);
     left: -22px;
 }
 
 .right-arrow {
+    background-image: url(media/png/right-arrow-icon-1x.png);
     right: -22px;
 }
 
 
 
-.slider-section {
-    display: flex;
+.product-slider {
+    display: block;
     background-color: #f4f4f4;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
     margin-bottom: 40px;
     border-radius: 3px;
-    /*overflow: hidden;*/
+    position: relative;
+
+}
+
+
+.product-slider .block-title {
+    font-size: 32px;
 }
 
 .slider-section .block-title {
-    padding: 6px 26px 3px 26px;
+    padding: 10px 26px 5px 26px;
 
 }
 
-.product-slider-container {
-    background-color: #e8e8e8;
-    background-color: #f00;
+.product-slider-inner-container {
     width: 100%;
     position: relative;
     overflow: hidden;
 }
 
-.product-slider {
+.product-grid {
     display: flex;
     position: relative;
     left: -20%;
-    width: calc(100% + 1px);
 }
 
 
 .product-tile {
     flex: 0 0 20%;
     min-height: 278px;
-    background-color: #f4f4f4;
+    background-color: #e8e8e8;
     width: 20%;
-    /*min-width: 200px;*/
-    padding: 40px 30px 17px 30px;
-    margin: 1px 1px 1px 0px;
+    padding-top: 1px;
+    padding-right: 1px;
     flex-grow: 1;
 
 }
@@ -1051,8 +1070,9 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    padding: 40px 30px 17px 30px;
     height: 100%;
+    background-color: #f4f4f4;
 }
 
 .product-photo {
