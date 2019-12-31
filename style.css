@@ -231,7 +231,7 @@ p {
 
 
 
- /* Block Titles */
+/* Block Titles */
 
 .block-title {
     font-size: 24px;
@@ -271,7 +271,9 @@ p {
     /*overflow: hidden;*/
 }
 
-.navigation-wrapper {z-index: 10;}
+.navigation-wrapper {
+    z-index: 10;
+}
 
 
 .header-wrapper {
@@ -330,7 +332,7 @@ p {
     height: 40px;
     min-width: 148px;
     margin-right: 8px;
-   /* background-color: aqua; ----------TestBackground---------*/
+    /* background-color: aqua; ----------TestBackground---------*/
     position: relative;
 }
 
@@ -547,7 +549,9 @@ p {
 
 }
 
-.loggin-link:hover {text-decoration: none;}
+.loggin-link:hover {
+    text-decoration: none;
+}
 
 .loggin-link::before {
     font-family: FontAwesome;
@@ -595,7 +599,9 @@ p {
     transition: 0.05s linear;
 }
 
-.shopping-cart-link:hover {text-decoration: none;}
+.shopping-cart-link:hover {
+    text-decoration: none;
+}
 
 
 .shopping-cart-link:hover {
@@ -698,6 +704,7 @@ p {
 @media screen and (max-width: 767px) {
     .links-sidebar-container {
         order: 0;
+        margin-top: 15px;
     }
 }
 
@@ -946,44 +953,86 @@ p {
 /* Product Slider */
 
 
-.slider-arrow {
+
+.slider-button {
     display: block;
 
     height: 35px;
     width: 35px;
     position: absolute;
-    /*top: calc(50% - 35px);*/
-    top: 45%;
-
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 35px;
+    top: 44%;
 
     outline: none;
 
     z-index: 10;
-
-
-
 }
 
 
 
-/*
-.slider-arrow img {
-    max-height: 35px;
-    max-width: 35px;
-}
-*/
+.left-button {
 
-.left-arrow {
-    background-image: url(media/png/left-arrow-icon-1x.png);
     left: -22px;
+    transition: left ease-out .5s
 }
 
-.right-arrow {
-    background-image: url(media/png/right-arrow-icon-1x.png);
+.right-button {
+
     right: -22px;
+    transition: right ease-out .5s
+}
+
+.button-arrow {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.left-button .button-arrow {
+    background-image: url(media/png/left-arrow-icon-1x.png);
+
+
+}
+
+.right-button .button-arrow {
+    background-image: url(media/png/right-arrow-icon-1x.png);
+}
+
+@media screen and (max-width: 1199px) {
+
+    .slider-button {
+        top: 0;
+        height: 100%;
+    }
+
+    .button-arrow {
+        background-color: #000;
+        opacity: 0.5;
+    }
+
+    .left-button .button-arrow {
+        background-image: url(media/png/right-arrow-icon-white.png);
+        transform: rotate(180deg);
+
+    }
+
+    .right-button .button-arrow {
+        background-image: url(media/png/right-arrow-icon-white.png);
+    }
+
+
+    .left-button {
+        left: 0;
+    }
+
+    .right-button {
+        right: 0;
+    }
+
+
 }
 
 
@@ -1008,10 +1057,20 @@ p {
 }
 
 .product-slider-inner-container {
-    width: 100%;
+    position: relative;
+}
+
+.product-grid-container {
+    overflow: hidden;
+}
+
+
+.product-grid-wrapper {
+    width: calc(100% + 2px);
     position: relative;
     overflow: hidden;
 }
+
 
 .product-grid {
     display: flex;
@@ -1031,9 +1090,12 @@ p {
 
 }
 
+
+
+
 @media screen and (max-width: 991px) {
 
-    .product-slider {
+    .product-grid {
         left: -25%;
     }
 
@@ -1044,7 +1106,7 @@ p {
 
 @media screen and (max-width: 767px) {
 
-    .product-slider {
+    .product-grid {
         left: -33.33%;
     }
 
@@ -1056,7 +1118,7 @@ p {
 
 @media screen and (max-width: 575px) {
 
-    .product-slider {
+    .product-grid {
         left: -50%;
     }
 
@@ -1295,10 +1357,10 @@ p {
 
 
 .payment-items {
-   display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
     flex-wrap: wrap;
-   justify-content: flex-start;
+    justify-content: flex-start;
 
     align-content: center;
 
@@ -1371,7 +1433,8 @@ img[src$=".svg"] {width: 100%;}
 .footer-bottom-menu-item:not(:last-child):after {
     display: inline-block;
     content: "|";
-    margin: 2px 10px;;
+    margin: 2px 10px;
+    ;
 }
 
 
@@ -1403,6 +1466,3 @@ img[src$=".svg"] {width: 100%;}
     display: inline-block;
     margin: 2px 0;
 }
-
-
-
