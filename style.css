@@ -271,6 +271,12 @@ p {
     /*overflow: hidden;*/
 }
 
+@media screen and (max-width: 991px) {
+    .header {
+        font-size: 12px;
+    }
+}
+
 .navigation-wrapper {
     z-index: 10;
 }
@@ -314,7 +320,7 @@ p {
 
 
 /* Header elements container */
-.header-elements-container {}
+
 
 /*Header elements*/
 .header-elements {
@@ -322,6 +328,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -529,31 +536,49 @@ p {
 
 .loggin-block-inner {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    justify-content: center;
     height: 100%;
     align-items: center;
-
-    /*padding: 13px 8px;*/
+    position: relative;
+    overflow: hidden;
 }
 
 
 .loggin-link {
+    display: inline-block;
     width: 100%;
-    height: 40px;
-
-    padding: 13px 8px;
-
-
+    height: 100%;
     line-height: 1;
+    text-decoration: none;
+    padding: 13px 8px;
+    background-color: aqua;
+}
+
+
+.loggin-link:hover {
+    text-decoration: none;
+}
+
+
+.loggin-link::before {
+    display: inline-block;
+    font-family: FontAwesome;
+    content: '\f007';
+    margin-right: 6px;
+    line-height: 1;
+}
 
 
 
-    background-color: #0ff;
+
+/*
+.loggin-link {
+    display: block;
+    width: 100%;
+    padding: 13px 8px 13px 25px;
+    line-height: 1;
     text-decoration: none;
     color: #000;
-
-    overflow: hidden;
     -webkit-transition: 0.05s linear;
     transition: 0.05s linear;
 
@@ -564,20 +589,36 @@ p {
 }
 
 .loggin-link::before {
-    display: inline-block;
+    display: block;
     width: 13px;
     height: 13px;
     font-family: FontAwesome;
     content: '\f007';
     margin-right: 6px;
-    /*line-height: 1;
+    line-height: 1;
     position: absolute;
-    left: 8px;
     top: 50%;
+    left: 8px;
     bottom: 50%;
-    margin-top: -0.5em;*/
+    margin-top: -0.6em;
+}
+
+*/
+
+@media screen and (max-width: 991px) {
+
+    .loggin-link {
+        display: block;
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .loggin-link::before {
+    display: block;
+    }
 
 }
+
 
 
 
@@ -635,6 +676,12 @@ p {
 .header-usp-items-container {
     margin-top: 8px;
     margin-left: 156px;
+}
+
+@media screen and (max-width: 991px) {
+    .header-usp-items-container {
+        margin-left: 0;
+    }
 }
 
 .usp-items-list {
@@ -849,11 +896,21 @@ p {
     align-items: center;
 }
 
+@media screen and (max-width: 479px) {
+    .banner-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 
 
 .banner:first-child .banner-inner {
     align-items: flex-start;
 }
+
+
+
 
 
 @media screen and (max-width: 767px) {
@@ -870,6 +927,11 @@ p {
 }
 
 
+@media screen and (max-width: 479px) {
+     .banner:first-child .banner-inner {
+        align-items: flex-start;
+    }
+}
 
 
 
