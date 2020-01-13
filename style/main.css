@@ -1,24 +1,24 @@
 ﻿@font-face {
     font-family: 'Avenir';
-    src: url('fonts/Avenir/Avenir-Black.eot');
+    src: url('../fonts/Avenir/Avenir-Black.eot');
     src: local('Avenir Black'), local('Avenir-Black'),
-        url('fonts/Avenir/Avenir-Black.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Avenir/Avenir-Black.woff2') format('woff2'),
-        url('fonts/Avenir/Avenir-Black.woff') format('woff'),
-        url('fonts/Avenir/Avenir-Black.ttf') format('truetype');
+        url('../fonts/Avenir/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/Avenir-Black.woff2') format('woff2'),
+        url('../fonts/Avenir/Avenir-Black.woff') format('woff'),
+        url('../fonts/Avenir/Avenir-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FontAwesome';
-    src: url('fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.eot');
+    src: url('../fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.eot');
     src: local('FontAwesome'),
-        url('fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-        url('fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.woff2') format('woff2'),
-        url('fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.woff') format('woff'),
-        url('fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.ttf') format('truetype'),
-        url('fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+        url('../fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.woff2') format('woff2'),
+        url('../fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.woff') format('woff'),
+        url('../fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.ttf') format('truetype'),
+        url('../fonts/FontAwesome-4.7.0/fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
     ;
     font-weight: 400;
     font-style: normal;
@@ -188,9 +188,10 @@ select {
     border-radius: 3px;
     background-color: #000;
     background-repeat: no-repeat;
-    background-image: url(media/svg/chevron-down-solid-white.svg);
+    background-image: url(../assets/icons/chevron-down-solid-white.svg);
     background-position: right 8px center;
     background-size: 8px;
+
 
     /* Remove default arrow */
     -webkit-appearance: none;
@@ -1019,13 +1020,13 @@ p {
 }
 
 .left-button .button-arrow {
-    background-image: url(media/png/left-arrow-icon-1x.png);
+    background-image: url(../assets/icons/left-arrow-icon-1x.png);
 
 
 }
 
 .right-button .button-arrow {
-    background-image: url(media/png/right-arrow-icon-1x.png);
+    background-image: url(../assets/icons/right-arrow-icon-1x.png);
 }
 
 
@@ -1403,13 +1404,13 @@ img[src$=".svg"] {width: 100%;}
     }
 
     .left-button .button-arrow {
-        background-image: url(media/png/right-arrow-icon-white.png);
+        background-image: url(../assets/icons/right-arrow-icon-white.png);
         transform: rotate(180deg);
 
     }
 
     .right-button .button-arrow {
-        background-image: url(media/png/right-arrow-icon-white.png);
+        background-image: url(../assets/icons/right-arrow-icon-white.png);
     }
 
 
