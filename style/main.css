@@ -1067,7 +1067,6 @@ p {
     width: calc(100% + 2px);
     position: relative;
     overflow: hidden;
-    overflow-x: scroll;
 
 }
 
@@ -1075,7 +1074,7 @@ p {
 .product-grid {
     display: flex;
     position: relative;
-    /*left: -20%;*/
+    left: -20%;
 
 }
 
