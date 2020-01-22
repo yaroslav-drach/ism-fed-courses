@@ -7,22 +7,8 @@
 
     <!-- Main Styles-->
     <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/media-queries.css">
 
-    <!-- Main JS-->
-    <script type="text/javascript" src="script/main.js"></script>
-    
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-    <link rel="manifest" href="favicons/site.webmanifest">
-    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato:900&display=swap" rel="stylesheet">
@@ -30,8 +16,36 @@
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" type="text/css" href="fonts/FontAwesome-4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" type="text/css" href="fonts/FontAwesome-4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Main JS-->
+    <script src="script/main.js"></script>
+
     <!-- JQuery-->
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <!-- Mask icon for Safari pinned tabs. With the release of Mac OS X 10.11, Safari finally got pinned tabs. While all other browsers use a site's favicon for the pinned tab, Apple deemed that "not esthetically pleasing enough" and created a new type of icon for it, which they call a "mask-icon". By default, they'll use the first letter of your domain if you don't have such an image. You need a black SVG image, a hover color and some time to do a tiny bit of coding.-->
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    <meta name="msapplication-config" content="favicons/browserconfig.xml">
+    <!-- В серверных логах иногда можно увидеть информацию об отсуствии файла browserconfig.xml.
+    Дело в том, что когда в ОС Windows 8 и выше пользователи заходят через браузеры Internet Explorer 11 или Microsoft Edge, они могут воспользоваться функцией "Закрепить сайт на начальном экране" и создать тем самым специальную плитку сайта на начальном экране Windows для быстрого доступа. К сайту в этом случае будет направлен запрос на чтение файла конфигурации браузера - того самого файла browserconfig.xml. В нем содержатся инструкции для правильного отображения плитки сайта.
+
+    Если файла browserconfig.xml на сервере сайта нет, то будет получено сообщение об ошибке «404» (File does not exist, No such file or directory и т.д.). Плохо это или нет - решать каждому владельцу самостоятельно, однако следует учитывать, что создание пользовательских плиток Windows для сайта могло бы положительно сказаться на поведенческих факторах ранжирования и расширить взаимодействие с сайтом для пользователей, а потому наличие файла browserconfig.xml в каталоге сайта было бы полезным. -->
+
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 </head>
@@ -39,9 +53,7 @@
 <body>
 
 
-
-    <!-- Main content -->
-
+    <!-- MAIN CONTENT (START) -->
     <main class="main-content">
 
         <div class="page-container">
@@ -50,8 +62,13 @@
 
                 <h1 class="seo-header-text-hidden">Homepage</h1>
 
+
+                <!-- TOP CONTENT (START) -->
                 <section class="top-content">
 
+                  <h2 class="seo-header-text-hidden">Top Content</h2>
+
+                    <!-- Product Banners (START) -->
                     <div class="product-banners">
 
                         <div class="product-banners-container">
@@ -137,8 +154,10 @@
 
                         </div>
                     </div>
+                    <!-- Product Banners (END) -->
 
 
+                    <!-- Links Sidebar (START) -->
                     <div class="links-sidebar-container">
                         <aside class="links-sidebar">
                             <ul class="link-items">
@@ -160,26 +179,28 @@
                             </ul>
                         </aside>
                     </div>
+                    <!-- Links Sidebar (END) -->
 
                 </section>
+                <!-- TOP CONTENT (END) -->
 
+
+                <!-- PRODUCT SLIDER (START) -->
                 <section class="slider-section">
 
-
-
                     <div class="product-slider">
-                        <div class="block-title">Bestsellers</div>
 
-
+                        <h2 class="block-title">Bestsellers</h2>
                         <div class="product-slider-inner-container">
                             <button class="left-button slider-button">
-                                <div class="button-arrow"></div>
+                                <span class="button-arrow"></span>
                             </button>
                             <div class="product-grid-container">
                                 <div class="product-grid-wrapper">
                                     <div class="product-grid">
 
                                         <div class="product-tile">
+                                            <a class="product-item-link" href="#"></a>
                                             <div class="product-tile-inner">
                                                 <div class="product-item-info">
                                                     <div class="product-photo">
@@ -194,6 +215,7 @@
                                             </div>
                                         </div>
                                         <div class="product-tile">
+                                            <a class="product-item-link" href="#"></a>
                                             <div class="product-tile-inner">
                                                 <div class="product-item-info">
                                                     <div class="product-photo">
@@ -208,6 +230,7 @@
                                             </div>
                                         </div>
                                         <div class="product-tile">
+                                            <a class="product-item-link" href="#"></a>
                                             <div class="product-tile-inner">
                                                 <div class="product-item-info">
                                                     <div class="product-photo">
@@ -222,6 +245,7 @@
                                             </div>
                                         </div>
                                         <div class="product-tile">
+                                            <a class="product-item-link" href="#"></a>
                                             <div class="product-tile-inner">
                                                 <div class="product-item-info">
                                                     <div class="product-photo">
@@ -236,6 +260,7 @@
                                             </div>
                                         </div>
                                         <div class="product-tile">
+                                            <a class="product-item-link" href="#"></a>
                                             <div class="product-tile-inner">
                                                 <div class="product-item-info">
                                                     <div class="product-photo">
@@ -250,6 +275,7 @@
                                             </div>
                                         </div>
                                         <div class="product-tile">
+                                            <a class="product-item-link" href="#"></a>
                                             <div class="product-tile-inner">
                                                 <div class="product-item-info">
                                                     <div class="product-photo">
@@ -264,6 +290,7 @@
                                             </div>
                                         </div>
                                         <div class="product-tile">
+                                            <a class="product-item-link" href="#"></a>
                                             <div class="product-tile-inner">
                                                 <div class="product-item-info">
                                                     <div class="product-photo">
@@ -283,7 +310,7 @@
                                 </div>
                             </div>
                             <button class="right-button slider-button">
-                                <div class="button-arrow"></div>
+                                <span class="button-arrow"></span>
                             </button>
                         </div>
 
@@ -291,9 +318,13 @@
                     </div>
 
                 </section>
+                <!-- PRODUCT SLIDER (END) -->
 
 
+
+                <!-- BOTTOM BANNERS (START) -->
                 <section class="bottom-banners-container">
+                    <h2 class="seo-header-text-hidden">Bottom Banners</h2>
 
                     <div class="bottom-banner">
                         <div class="bottom-banner-image-container">
@@ -320,20 +351,22 @@
                     </div>
 
                 </section>
+                <!-- BOTTOM BANNERS (END) -->
+
 
             </div>
         </div>
     </main>
+    <!-- MAIN CONTENT (END) -->
 
 
 
 
-
-    <!-- Header -->
-
+    <!-- HEADER (START) -->
     <header class="header">
         <div class="page-container">
             <div class="header-wrapper">
+
 
                 <div class="header-logo">
                     <a href="#"><img src="assets/images/header-logo-1x.png" alt="header-logo" title="Header logo" /></a>
@@ -354,7 +387,7 @@
 
                                         <div class="hamburger-icon-container">
                                             <label for="menu-overlay-toggle">
-                                                <div class="hamburger-icon">Menu</div>
+                                                <span class="hamburger-icon">Menu</span>
                                             </label>
                                         </div>
 
@@ -380,7 +413,7 @@
 
                                         <div class="search-bar">
                                             <form class="search-form" action="https://www.domain.nl/catalogsearch/result/" method="get">
-                                                <input id="search-field" type="text" name="search-field" placeholder="Zoek product" maxlength="128" autocomplete="off" autocorrect="off">
+                                                <input id="search-field" type="text" name="search-field" placeholder="Zoek product" maxlength="128" autocomplete="off">
                                                 <button type="submit" title="Zoek" class="search-button"></button>
                                             </form>
                                         </div>
@@ -395,9 +428,9 @@
                                         <div class="btw">
                                             <label class="switcher">
                                                 <input class="toggle-input" type="checkbox">
-                                                <div class="toggle">
+                                                <span class="toggle">
                                                     <span>Excl. BTW</span><span>Incl. BTW</span>
-                                                </div>
+                                                </span>
                                             </label>
                                         </div>
 
@@ -428,19 +461,20 @@
             </div>
         </div>
     </header>
+    <!-- HEADER (END) -->
 
 
 
-    <!-- Footer -->
+    <!-- FOOTER (START) -->
     <footer class="footer">
         <div class="footer-inner-wrapper">
 
-            <!-- Footer Top Container Blocks -->
+            <!-- Footer Top Container Blocks (START) -->
             <div class="footer-top-container">
                 <div class="page-container">
                     <div class="footer-top-container-inner">
 
-                        <!-- About Block -->
+                        <!-- About Block (START) -->
                         <div class="column about-block">
                             <h4 class="block-title">Over bedrijf</h4>
                             <ul class="block-items">
@@ -449,8 +483,10 @@
                                 <li><a href="#">Nieuws</a></li>
                             </ul>
                         </div>
+                        <!-- About Block (END) -->
 
-                        <!-- Service Block -->
+
+                        <!-- Service Block (START) -->
                         <div class="column service-block">
                             <h4 class="block-title">Klantenservice</h4>
                             <ul class="block-items">
@@ -463,18 +499,22 @@
                                 <li><a href="#">Nieuwsbrief</a></li>
                             </ul>
                         </div>
+                        <!-- Service Block (END) -->
 
-                        <!-- Newsletter Subscription Block -->
+
+                        <!-- Newsletter Subscription Block (START) -->
                         <div class="column newsletter-subscription-block">
                             <h4 class="block-title">Nieuwsbrief</h4>
-                            <form class="newsletter-subscribe-form" novalidate="novalidate" action="" method="post">
+                            <form class="newsletter-subscribe-form" novalidate="novalidate" action="https://www.domain.nl/newsletter/subscriber/new/" method="post">
                                 <input id="newsletter-subscribe-email" name="newsletter-subscribe-email" type="email" placeholder="E-mailadres">
                                 <div class="error newsletter-error">A valid e-mail address has not been entered. Check if the e-mail address contains an @ and a dot. And if there are no spaces in it</div>
                                 <button class="newsletter-subscribe-button btn" title="Aanmelden" type="submit">Aanmelden</button>
                             </form>
                         </div>
+                        <!-- Newsletter Subscription Block (END) -->
 
-                        <!-- Payment icons -->
+
+                        <!-- Payment icons (START) -->
                         <div class="column footer-icons">
                             <div class="payment-items-container">
                                 <ul class="payment-items">
@@ -501,22 +541,27 @@
                                 </ul>
                             </div>
                         </div>
+                        <!-- Payment icons (END) -->
 
                     </div>
                 </div>
             </div>
+            <!-- Footer Top Container Blocks (END) -->
 
-            <!-- Footer Bottom Container Blocks -->
+
+            <!-- Footer Bottom Container Blocks (START) -->
             <div class="footer-bottom-container">
                 <div class="page-container">
                     <div class="footer-bottom-container-inner">
 
-                        <!-- Footer Bottom Menu -->
+                        <!-- Footer Bottom Menu (START) -->
                         <div class="footer-bottom-menu">
                             <a class="footer-bottom-menu-item" href="#" title="">Algemene voorwarden</a><a class="footer-bottom-menu-item" href="#" title="">Privacy</a><a class="footer-bottom-menu-item" href="#" title="">Cookies</a><a class="footer-bottom-menu-item" href="#" title="">Disclaimer</a>
                         </div>
+                        <!-- Footer Bottom Menu (END) -->
 
-                        <!-- Footer Rating -->
+
+                        <!-- Footer Rating (START) -->
                         <div class="footer-rating">
                             <div class="footer-rating-stars">
                                 <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
@@ -524,19 +569,25 @@
                             <div class="footer-rating-reviews"><span class="reviews-number">1.011</span> beoordelingen</div>
                             <!-- Instead of images "footer-rating-stars" and "footer-rating-reviews" we should use reviews online service
                            <iframe frameborder="0" scrolling="no" title="Customer reviews online service" loading="auto" src="" style="position: relative; height: 14px; width: 100%; border-style: none; display: block; overflow: hidden;"></iframe>
-                        -->
+                           -->
                         </div>
+                        <!-- Footer Rating (END) -->
 
                     </div>
                 </div>
             </div>
+            <!-- Footer Bottom Container Blocks (START) -->
 
         </div>
 
     </footer>
+    <!-- FOOTER (END) -->
 
+
+    <!-- ADDITIONAL (START) -->
     <div class="extras"></div>
     <div class="modals"></div>
+    <!-- ADDITIONAL (END) -->
 
 
 
