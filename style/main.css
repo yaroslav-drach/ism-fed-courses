@@ -326,7 +326,6 @@ p {
 .header-logo-mobile {
     display: none;
     max-width: 100px;
-    margin-bottom: 8px;
     height: 40px;
     min-width: 75px;
     /*margin: 0 auto 0 8px;*/
@@ -349,7 +348,6 @@ p {
     display: none;
     padding-left: 8px;
     padding-right: 8px;
-    margin-bottom: 8px;
 }
 
 .hamburger-icon {
