@@ -1,84 +1,91 @@
-﻿/*Slider = {
+﻿
 
-  init: function () {
-      $('body').addClass('opacity1');
-      this.navigation.scrollToTop();
-      this.animations.init();
-      this.selects();
-      this.slider();
-      this.fakeUploader();
-      this.scrollPage();
-      this.initValidation();
-      this.acceptCookies.init();
-  }
-};
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  Slider.init();
-});
-*/
-
-/* https://codepen.io/maxim-komarov-the-scripter/pen/BaybyrZ */
-
-document.addEventListener('DOMContentLoaded', function () {
-window.addEventListener('resize', reset);
-
 
 var carouselElement = document.getElementsByClassName('product-slider');
-var listElements = carouselElement[0].querySelector('.products-grid');
+var productsSliderView = carouselElement[0].querySelector('.product-slider-view');
+var productsList = carouselElement[0].querySelector('.products-grid');
+
+var productsNumber = carouselElement[0].querySelectorAll('.product-tile').length;
+var productTile = carouselElement[0].querySelector('.product-tile');
+
+var btnPrev = carouselElement[0].querySelector('.btn-prev');
+var btnNext = carouselElement[0].querySelector('.btn-next');
+var shiftIndex = 0;
+
+var productsInSliderView;
+var productTileWidthInPercentage;
+
+
+reset();
 
 
 function reset() {
-    var viewElementsWidth = carouselElement[0].querySelector('.product-slider-view').clientWidth-2;
-    console.log(viewElementsWidth);
-
+    productsInSliderView = Math.round((productsSliderView.clientWidth-2)/productTile.clientWidth);
+    productTileWidthInPercentage = 100/productsInSliderView;
+    validateSliding();
+    hideAndShowArrows()
 };
 
 
-var itemsNumber = carouselElement[0].querySelectorAll('.product-tile').length;
-var itemWidth = carouselElement[0].querySelector('.product-tile').clientWidth;
+function moveLeft() {
+    shiftIndex++;
+    validateSliding();
+    hideAndShowArrows()
+}
 
-var btnPrev = carouselElement[0].querySelector('.left-button');
-var btnNext = carouselElement[0].querySelector('.right-button');
-var shiftIndex = 0;
+function moveRight() {
+    shiftIndex--;
+    validateSliding();
+    hideAndShowArrows()
+}
 
 
-btnNext.addEventListener('click', function() {
-    if (shiftIndex > Math.round(viewElementsWidth/itemWidth) - itemsNumber) {
-        shiftIndex--;
-        listElements.style.left = shiftIndex * 100 * (itemWidth/viewElementsWidth) + '%';
-        console.log(listElements.style.left);
+function hideAndShowArrows() {
+    if (shiftIndex < productsInSliderView - productsNumber + 1) {
+        btnNext.style.display="none";
+    } else {
+        btnNext.style.display="block";
     }
-});
 
-
-btnPrev.addEventListener('click', function(){
-    if (shiftIndex < 0) {
-        shiftIndex++;
-        listElements.style.left = shiftIndex * 100 * (itemWidth/viewElementsWidth) + '%';
-        console.log(listElements.style.left);
+    if (shiftIndex >= 0) {
+        btnPrev.style.display="none";
     }
+    else {
+        btnPrev.style.display="block";
+    }
+
+}
+
+function validateSliding() {
+
+    if (shiftIndex < productsInSliderView - productsNumber) {
+        shiftIndex = productsInSliderView - productsNumber;
+    }
+
+    if (shiftIndex > 0) {
+        shiftIndex = 0;
+    }
+
+    productsList.style.left = shiftIndex * productTileWidthInPercentage + '%';
+
+}
+
+function handleMenuChange() {
+    document.scrollIntoView({block: "center", behavior: "smooth"});
+}
+
+
+btnPrev.addEventListener('click', moveLeft);
+btnNext.addEventListener('click', moveRight);
+window.addEventListener('resize' , reset);
+window.addEventListener('orientationchange' , reset);
+
+
 });
 
 
-
-console.log(carouselElement);
-
-
-});
-
-
-
-
-
-
-
-//(function($) {
-
-
-
-
-//}(jQuery));
 
 
