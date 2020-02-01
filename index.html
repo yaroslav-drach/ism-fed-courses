@@ -19,12 +19,11 @@
     <link rel="stylesheet" type="text/css" href="fonts/FontAwesome-4.7.0/css/font-awesome.min.css">
 
 
-    <!-- JQuery-->
-    <script src="script/jquery-3.4.1.min.js"></script>
-
-    <!-- Main JS-->
+    <!-- jQuery-->
+    <script src="libs/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+ 
+     <!-- Main JS-->
     <script src="script/main.js"></script>
-
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
@@ -399,15 +398,25 @@
 
                             <div class="navigation-menu-container">
                                 <nav class="navigation-menu">
+                                    <select id="navigation-items">
+                                        <option value='0'>Producten</option>
+                                        <option value='1'>Product1</option>
+                                        <option value='2'>Product2</option>
+                                        <option value='3'>Product3</option>
+                                        <option value='4'>Product4</option>
+                                        <option value='5'>Product5</option>
+                                        <option value='6'>Product6</option>
+                                        <option value='7'>Product7</option>
+                                    </select>
                                     <ul class="navigation-items">
-                                        <li class="navigation-item"><a href="#">Producten</a></li>
-                                        <li class="navigation-item"><a href="#">Product1</a></li>
-                                        <li class="navigation-item"><a href="#">Product2</a></li>
-                                        <li class="navigation-item"><a href="#">Product3</a></li>
-                                        <li class="navigation-item"><a href="#">Product4</a></li>
-                                        <li class="navigation-item"><a href="#">Product5</a></li>
-                                        <li class="navigation-item"><a href="#">Product6</a></li>
-                                        <li class="navigation-item"><a href="#">Product7</a></li>
+                                        <li class="navigation-item" data-product="0"><a href="#">Producten</a></li>
+                                        <li class="navigation-item" data-product="1"><a href="#">Product1</a></li>
+                                        <li class="navigation-item" data-product="2"><a href="#">Product2</a></li>
+                                        <li class="navigation-item" data-product="3"><a href="#">Product3</a></li>
+                                        <li class="navigation-item" data-product="4"><a href="#">Product4</a></li>
+                                        <li class="navigation-item" data-product="5"><a href="#">Product5</a></li>
+                                        <li class="navigation-item" data-product="6"><a href="#">Product6</a></li>
+                                        <li class="navigation-item" data-product="7"><a href="#">Product7</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -643,9 +652,6 @@
     <div class="extras"></div>
     <div class="modals"></div>
     <!-- ADDITIONAL (END) -->
-
-
-
 
 </body>
 
