@@ -16,11 +16,16 @@ var shiftIndex = 0;
 var productsInSliderView;
 var productTileWidthInPercentage;
 
-var navigationItemsSelect = document.getElementById('navigation-items');
-var oneNavigationItemSelect = navigationItemsSelect.querySelectorAll('option');
-var menuItems = document.getElementsByClassName('navigation-items')[0];
-var oneMenuItem = menuItems.querySelectorAll('.navigation-item');
-var menuOpenTrigger;
+var navigationMenu = document.getElementsByClassName('navigation-menu')[0];
+var navigationItems = document.getElementsByClassName('navigation-items')[0];
+
+// Desktop Menu Open/Closed Trigger
+var triggerMenuButton = document.getElementsByClassName('trigger-menu')[0];
+var menuOpenTrigger = false; //init state of Trigger
+
+// Mobile menu overlay toggle
+var menuOverlayToggle = document.getElementById('menu-overlay-toggle');
+
 var selectedProduct;
 
 
@@ -31,7 +36,7 @@ function reset() {
     productsInSliderView = Math.round((productsSliderView.clientWidth-2)/productTile.clientWidth);
     productTileWidthInPercentage = 100/productsInSliderView;
     validateSliding();
-    hideAndShowArrows()
+    hideAndShowArrows();
 };
 
 
@@ -44,7 +49,7 @@ function moveLeft() {
 function moveRight() {
     shiftIndex--;
     validateSliding();
-    hideAndShowArrows()
+    hideAndShowArrows();
 }
 
 
@@ -80,55 +85,54 @@ function validateSliding() {
 
 function scrollToSliderAndSelectProduct() {
     var destination;
-
-    selectedProduct = Number(navigationItemsSelect.value);
     if (selectedProduct > 0) {
         destination = $('.slider-section').offset().top;
         $('html').animate({ scrollTop: destination }, 1000);
         shiftIndex = 1-selectedProduct;
     }
     validateSliding();
-    hideAndShowArrows()
+    hideAndShowArrows();
 }
 
 
-function closeMobileMenu() {
-    var menuOverlayToggle = document.getElementById('menu-overlay-toggle');
+function closeMenu() {
+
     if (menuOverlayToggle.checked) {
         menuOverlayToggle.checked = false;
     }
+
+    if (navigationMenu.classList.contains('menu-active')) {
+    navigationMenu.classList.remove('menu-active');
+    }
 }
 
 
-var menuOpenTrigger = false;
-
 function triggerDesktopMenu() {
-    
-    if (menuOpenTrigger) {
-        menuItems.classList.remove('menu-active');
+     if (menuOpenTrigger) {
+        navigationMenu.classList.remove('menu-active');
         menuOpenTrigger = !menuOpenTrigger;
     } else {
-        menuItems.classList.add('menu-active');
+        navigationMenu.classList.add('menu-active');
         menuOpenTrigger = !menuOpenTrigger;
     }
     
 }
 
-function bindMenuItemsToSelect() {
-   
-    
-}
+$('.navigation-items').on('click', 'a', function(e) {
+    e.preventDefault();
+    selectedProduct = $(e.target).closest('.navigation-items')
+    .children()
+    .index($(e.target).parent())+1;
 
+})
 
 btnPrev.addEventListener('click', moveLeft);
 btnNext.addEventListener('click', moveRight);
 window.addEventListener('resize' , reset);
 window.addEventListener('orientationchange' , reset);
-navigationItemsSelect.addEventListener('change', closeMobileMenu);
-navigationItemsSelect.addEventListener('change', scrollToSliderAndSelectProduct);
-menuItems.addEventListener('click', closeMobileMenu);
-menuItems.addEventListener('click', triggerDesktopMenu);
-menuItems.addEventListener('click', bindMenuItemsToSelect);
+navigationItems.addEventListener('click', closeMenu);
+navigationItems.addEventListener('click', scrollToSliderAndSelectProduct);
+triggerMenuButton.addEventListener('click', triggerDesktopMenu);
 
 });
 
