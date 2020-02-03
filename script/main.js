@@ -1,6 +1,4 @@
-﻿
-document.addEventListener('DOMContentLoaded', function () {
-
+﻿document.addEventListener('DOMContentLoaded', function () {
 
 var carouselElement = document.getElementsByClassName('product-slider');
 var productsSliderView = carouselElement[0].querySelector('.product-slider-view');
@@ -86,12 +84,13 @@ function validateSliding() {
 function scrollToSliderAndSelectProduct() {
     var destination;
     if (selectedProduct > 0) {
-        destination = $('.slider-section').offset().top;
-        $('html').animate({ scrollTop: destination }, 1000);
+        destination = $('.slider-section').offset().top; // if sticky header: destination - $('.header').height() - 10;
+        $('html, body').animate({ scrollTop: destination }, 1000, 'swing', function() {
+            validateSliding();
+            hideAndShowArrows();
+        });
         shiftIndex = 1-selectedProduct;
     }
-    validateSliding();
-    hideAndShowArrows();
 }
 
 
